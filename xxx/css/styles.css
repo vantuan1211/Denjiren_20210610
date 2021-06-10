@@ -639,7 +639,7 @@ textarea{
 /*>>> 2-4-2.  Headings [hdg-lv*] */
 .hdg-lv2{
 	font-size: 3.2rem;
-	margin: 12rem 0 8rem;
+	padding: 12rem 0 8rem;
 	color: #9EC7D1;
 	position: relative;
 	font-weight: bold;
@@ -1253,7 +1253,13 @@ textarea{
 /* ▲わたしたちの考え */
 
 /* ▼取り組みの方向性 */
+.section-roadmap {
+	background: #F5F9FA;
+}
 
+.section-plan {
+	background: #B7E3E5;
+}
 /* ▲取り組みの方向性 */
 
 
