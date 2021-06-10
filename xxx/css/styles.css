@@ -1355,6 +1355,7 @@ textarea{
 	background: #9EC7D1;
 	position: relative;
 	z-index: 2;
+	margin-bottom: 260px;
 }
 .sec-about__inner{
 	position: relative;
@@ -1459,6 +1460,9 @@ textarea{
 	padding-top: 94px;
 }
 @media screen and (min-width: 1367px){
+	.sec-about{
+		margin-bottom: 430px;
+	}
 	.sec-about:after{
 		bottom: -430px;
 	}
