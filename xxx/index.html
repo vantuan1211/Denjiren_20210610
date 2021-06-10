@@ -22,7 +22,26 @@
 </head>
 <body>
 <div id="l-document">
-<header></header>
+<header id="l-header" class="l-header">
+	<div class="l-header__wrapper">
+		<p id="sitelogo"><a href="/" target="_blank"><img src="./img/logo.png" alt=""></a></p>
+		<a class="nav-global-menu">
+			<span class="b1" aria-hidden="true"></span>
+			<span class="b2" aria-hidden="true"></span>
+			<span class="b3" aria-hidden="true"></span>
+		</a>
+		<nav class="nav-global-wrap">
+			<ul class="nav-global">
+				<li class="nav-global__item"><a href="#">宣言</a></li>
+				<li class="nav-global__item"><a href="#">わたしたちの考え</a></li>
+				<li class="nav-global__item"><a href="#">取り組みの方向性</a></li>
+				<li class="nav-global__item"><a href="#">ロードマップ・実現イメージ</a></li>
+			</ul>
+			<p class="nav-button"><a href="#">実現に向けてのプラン</a></p>
+			<p class="nav-link"><a href="/">電気事業連合会ホームページ</a></p>
+		</nav>
+	</div>
+</header>
 <div id="l-container">
 	<noscript>
 		<div class="box-noscript">
@@ -32,7 +51,37 @@
 	</noscript>
 	<div id="l-main">
 		<!--▼Mainvisual &amp; 宣言▼▼▼▼▼▼▼-->
-
+		<div class="sec-main">
+			<div class="box-main-visual">
+				<div class="box-main-visual__inner">
+					<h1 class="box-main-visual__title">
+						<img src="./img/main-txt-pc.png" alt="" class="fluid-image is-visiblePc">
+						<img src="./img/main-txt-sp.png" alt="" class="fluid-image is-visibleSp">
+					</h1>
+					<p class="box-main-visual__text">2050年カーボンニュートラルの<br>実現に向けて</p>
+					<div class="box-main-visual__image"><img src="./img/main-img.png" alt="" class="fluid-image"></div>
+					<div class="box-main-visual__deco01"><img src="./img/main-img-deco01.png" alt="" class="fluid-image"></div>
+					<div class="box-main-visual__deco02"><img src="./img/main-img-deco02.png" alt="" class="fluid-image"></div>
+					<div class="box-main-visual__deco03"><img src="./img/main-img-deco03.png" alt="" class="fluid-image"></div>
+					<p class="box-main-visual__scroll">scroll</p>
+				</div>
+			</div>
+			<div class="box-declaration">
+				<div class="box-declaration__inner">
+					<div class="box-declaration__content">
+						<h2 class="hdg-lv2">宣言</h2>
+						<p class="box-declaration__lead">わたしたちは、2050年カーボンニュートラルの実現に向けて、<br>「S＋３E」の同時達成を前提に、<br>供給側の「電源の脱炭素化」、<br>需要側の最大限の「電化の推進」に取り組み、<br>持てる技術、知恵を結集し、積極的に挑戦していきます。</p>
+						<div class="box-message">
+							<div class="box-message__inner">
+								<h3 class="box-message__title">カーボンニュートラルとは？</h3>
+								<p class="box-message__text">CO2をはじめとした温室効果ガスの排出を差し引きゼロにすることです。<br>温室効果ガスの排出を出来うる限り低減し、排出せざるを得なかったぶんについては同じ量を「吸収」または「除去」することで、全体として差し引きゼロを目指します。<br>日本の温室効果ガスの排出量は年間約12億トン※にのぼり、そのうちの8割以上が、燃料を燃焼したり電気や熱を使用したりすることで排出されるエネルギー起源CO2です。<br><span>※2018年</span></p>
+							</div>
+							<p class="box-message__circle"><img src="./img/img-circle.png" alt="" class="fluid-image"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!--▲Mainvisual &amp; 宣言▲▲▲▲▲▲▲-->
 
 		<!--sec-about-->
@@ -74,28 +123,135 @@
 		<!--sec-about-->
 
 		<!--▼取り組みの方向性▼▼▼▼▼▼▼-->
-		<div class="box-efforts">
+		<div class="section-efforts">
 			<div class="wrp-container">
+				<div class="box-scrollDown">
+					<div class="box-scrollDown__circle"><img src="./img/img-circle.png" alt="" class="fluid-image"></div>
+				</div>
 				<h2 class="hdg-lv2"><span></span>取り組みの方向性</h2>
+				<div class="box-efforts">
+					<div class="box-efforts__text">
+						<div class="box-efforts__image-slider js-slickText">
+							<div class="box-efforts__item">
+								<div class="box-efforts__content">
+									<span class="box-efforts__number"><img src="./img/no-txt01.svg" alt="" class="fluid-image"></span>
+									<p class="box-efforts__title">確率した脱炭素電源の最大限活用</p>
+									<p class="box-efforts__description">供給側における「電源の脱炭素化」</p>
+									<p class="box-efforts__detail">供給側における「電源の脱炭素化」に向けては、エネルギー資源や再生可能エネルギー(以下、「再エネ」)の適地等に乏しい我が国の国情やレジリエンスの観点等を踏まえて、特定の電源に過度に依存することなくバランスのとれた電源構成を追求することが重要です。</p>
+								</div>
+							</div>
+							<div class="box-efforts__item">
+								<div class="box-efforts__content">
+									<span class="box-efforts__number"><img src="./img/no-txt02.svg" alt="" class="fluid-image"></span>
+									<p class="box-efforts__title">確率した脱炭素電源の最大限活用</p>
+									<p class="box-efforts__description">供給側における「電源の脱炭素化」</p>
+									<p class="box-efforts__detail">供給側における「電源の脱炭素化」に向けては、エネルギー資源や再生可能エネルギー(以下、「再エネ」)の適地等に乏しい我が国の国情やレジリエンスの観点等を踏まえて、特定の電源に過度に依存することなくバランスのとれた電源構成を追求することが重要です。</p>
+								</div>
+							</div>
+							<div class="box-efforts__item">
+								<div class="box-efforts__content">
+									<span class="box-efforts__number"><img src="./img/no-txt03.svg" alt="" class="fluid-image"></span>
+									<p class="box-efforts__title">確率した脱炭素電源の最大限活用</p>
+									<p class="box-efforts__description">供給側における「電源の脱炭素化」</p>
+									<p class="box-efforts__detail">供給側における「電源の脱炭素化」に向けては、エネルギー資源や再生可能エネルギー(以下、「再エネ」)の適地等に乏しい我が国の国情やレジリエンスの観点等を踏まえて、特定の電源に過度に依存することなくバランスのとれた電源構成を追求することが重要です。</p>
+								</div>
+							</div>
+							<div class="box-efforts__item">
+								<div class="box-efforts__content">
+									<span class="box-efforts__number"><img src="./img/no-txt04.svg" alt="" class="fluid-image"></span>
+									<p class="box-efforts__title">確率した脱炭素電源の最大限活用</p>
+									<p class="box-efforts__description">供給側における「電源の脱炭素化」</p>
+									<p class="box-efforts__detail">供給側における「電源の脱炭素化」に向けては、エネルギー資源や再生可能エネルギー(以下、「再エネ」)の適地等に乏しい我が国の国情やレジリエンスの観点等を踏まえて、特定の電源に過度に依存することなくバランスのとれた電源構成を追求することが重要です。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="box-efforts__image">
+						<div class="box-efforts__image-img js-slickImage">
+							<figure>
+								<img src="./img/img-index-efforts01.png" alt="" class="fluid-image">
+								<figcaption>カーボンニュートラルの全体図 01</figcaption>
+							</figure>
+							<figure>
+								<img src="./img/img-index-efforts02.png" alt="" class="fluid-image">
+								<figcaption>カーボンニュートラルの全体図 02</figcaption>
+							</figure>
+							<figure>
+								<img src="./img/img-index-efforts03.png" alt="" class="fluid-image">
+								<figcaption>カーボンニュートラルの全体図 03</figcaption>
+							</figure>
+							<figure>
+								<img src="./img/img-index-efforts04.png" alt="" class="fluid-image">
+								<figcaption>カーボンニュートラルの全体図 04</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
 			</div>
 
 		</div>
-		<div class="box-Roadmap">
+		<div class="section-roadmap">
 			<div class="wrp-container">
-				<h2 class="hdg-lv2"><span class="hdg-lv2__sub">2050年に向けての</span>実現イメージ</h2>
+				<div class="box-roadmap">
+					<h2 class="hdg-lv2">ロードマップ</h2>
+					<div class="box-roadmap__image">
+						<figure>
+							<img src="./img/img-index-roadmap01.jpg" alt="" class="fluid-image is-visiblePc">
+							<img src="./img/img-index-roadmap01-sp.jpg" alt="" class="fluid-image is-visibleSp">
+						</figure>
+					</div>
+				</div>
+
+				<div class="box-roadmap">
+					<h2 class="hdg-lv2"><span class="hdg-lv2__sub">2050年に向けての</span>実現イメージ</h2>
+					<div class="box-roadmap__image">
+						<figure>
+							<img src="./img/img-index-roadmap02.jpg" alt="" class="fluid-image is-visiblePc">
+							<img src="./img/img-index-roadmap02-sp.jpg" alt="" class="fluid-image is-visibleSp">
+						</figure>
+					</div>
+				</div>
 			</div>
 
 		</div>
-		<div class="box-plan">
-			<div class="wrp-container">
+		<div class="section-plan">
+			<div class="section-plan__container">
 				<h2 class="hdg-lv2">実現に向けてのプラン</h2>
+				<div class="section-plan__image">
+					<figure>
+						<img src="./img/img-index-plan01.png" alt="" class="fluid-image">
+					</figure>
+					<span class="section-plan__bgIcon section-plan__bgIcon--01"><img src="./img/bg-index-cloud.svg" alt="" class="fluid-image"></span>
+					<span class="section-plan__bgIcon section-plan__bgIcon--02"><img src="./img/bg-index-cloud.svg" alt="" class="fluid-image"></span>
+					<span class="section-plan__bgIcon section-plan__bgIcon--03"><img src="./img/bg-index-cloud.svg" alt="" class="fluid-image"></span>
+					<span class="section-plan__bgIcon section-plan__bgIcon--04"><img src="./img/bg-index-cloud.svg" alt="" class="fluid-image"></span>
+				</div>
+				<p class="section-plan__button"><a href="★★★" class="btn"><span>READ MORE</span></a></p>
 			</div>
 
 		</div>
 		<!--▲取り組みの方向性▲▲▲▲▲▲▲-->
 	</div><!-- /#main -->
 </div><!-- /#container -->
-<footer></footer>
+<footer id="l-footer" class="l-footer">
+	<div class="l-footer__wrapper">
+		<p class="l-footer__title">関連リンク</p>
+		<nav class="nav-contentinfo">
+			<ul>
+				<li><a href="★★★" target="_blank">テキストテキストテキストテキスト</a></li>
+				<li><a href="★★★" target="_blank">テキストテキストテキストテキスト</a></li>
+				<li><a href="★★★" target="_blank">テキストテキストテキストテキスト</a></li>
+				<li><a href="★★★" target="_blank">テキストテキストテキストテキスト</a></li>
+				<li><a href="★★★" target="_blank">テキストテキストテキストテキスト</a></li>
+			</ul>
+		</nav>
+		<ul class="lst-social">
+			<li><a href="★★★" target="_blank"><img src="./img/icon-facebook.svg" alt=""></a></li>
+			<li><a href="★★★" target="_blank"><img src="./img/icon-twitter.svg" alt=""></a></li>
+		</ul>
+		<p class="txt-copyright"><small>Copyright(c) The Federation of Electric Power Companies of Japan.</small></p>
+	</div>
+</footer>
 </div><!-- /#document -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="./js/jquery.min.js"><\/script>');</script>
