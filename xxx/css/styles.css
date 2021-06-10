@@ -1382,6 +1382,7 @@ textarea{
 .section-roadmap {
 	background: #F5F9FA;
 	position: relative;
+	padding-bottom: 24rem;
 	z-index: 2;
 }
 .box-roadmap__image {
@@ -1401,6 +1402,7 @@ textarea{
 .section-plan{
 	background: #B7E3E5;
 	position: relative;
+	padding-bottom: 12rem;
 	z-index: 2;
 }
 .section-plan .hdg-lv2{
