@@ -597,7 +597,7 @@ textarea{
 /*>>> 2-4-1.  Wrapper     [wrp-***]*/
 .wrp-container{
 	margin: 0 4vw;
-	max-width: 130rem;
+	max-width: 110rem;
 }
 .wrp-container:after{
 	content: "";
@@ -638,13 +638,17 @@ textarea{
 
 /*>>> 2-4-2.  Headings [hdg-lv*] */
 .hdg-lv2{
-	font-size: 1.8rem;
-	border-bottom: 0.1rem solid #ddd;
-	margin: 3.5rem 0 1rem;
-	padding: 0 0 0.8rem 0;
-	color: #00695c;
+	font-size: 3.2rem;
+	margin: 12rem 0 8rem;
+	color: #9EC7D1;
 	position: relative;
 	font-weight: bold;
+	line-height: 1.3;
+	text-align: center;
+}
+.hdg-lv2__sub{
+	display: block;
+	font-size: 1.6rem;
 }
 .hdg-lv3{
 	font-size: 1.6rem;
