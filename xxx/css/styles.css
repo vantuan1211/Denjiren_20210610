@@ -341,7 +341,7 @@ body{
 	background-color: #fff;
 	line-height: 1.4;
 	letter-spacing: 0;
-	font-family:"游ゴシック", "YuGothic","Roboto Regular","ヒラギノ角ゴ ProN W3","HiraKakuProN-W3","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","helvetica","arial",sans-serif;
+	font-family: 'Noto Sans JP', sans-serif;
 	font-feature-settings : "palt";
 	height: 100%;
 }
