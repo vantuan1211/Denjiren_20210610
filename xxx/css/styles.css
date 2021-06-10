@@ -1071,7 +1071,6 @@ textarea{
 -------------------------------------------------- */
 #l-document{
 	min-height: 100%;
-	padding-bottom: 20rem;
 	box-sizing: border-box;
 	position: relative;
 }
