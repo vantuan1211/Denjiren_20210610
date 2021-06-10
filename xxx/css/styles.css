@@ -1293,6 +1293,7 @@ textarea{
 }
 .box-declaration__inner{
 	background: #fff;
+	padding-bottom: 300px;
 }
 .box-declaration__content{
 	display: block;
@@ -1353,7 +1354,7 @@ textarea{
 .sec-about{
 	background: #9EC7D1;
 	position: relative;
-	margin-top: 300px;
+	z-index: 2;
 }
 .sec-about__inner{
 	position: relative;
