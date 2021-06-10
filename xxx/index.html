@@ -22,7 +22,26 @@
 </head>
 <body>
 <div id="l-document">
-<header></header>
+<header id="l-header" class="l-header">
+	<div class="l-header__wrapper">
+		<p id="sitelogo"><a href="/" target="_blank"><img src="./img/logo.png" alt=""></a></p>
+		<a class="nav-global-menu">
+			<span class="b1" aria-hidden="true"></span>
+			<span class="b2" aria-hidden="true"></span>
+			<span class="b3" aria-hidden="true"></span>
+		</a>
+		<nav class="nav-global-wrap">
+			<ul class="nav-global">
+				<li class="nav-global__item"><a href="#">宣言</a></li>
+				<li class="nav-global__item"><a href="#">わたしたちの考え</a></li>
+				<li class="nav-global__item"><a href="#">取り組みの方向性</a></li>
+				<li class="nav-global__item"><a href="#">ロードマップ・実現イメージ</a></li>
+			</ul>
+			<p class="nav-button"><a href="#">実現に向けてのプラン</a></p>
+			<p class="nav-link"><a href="/">電気事業連合会ホームページ</a></p>
+		</nav>
+	</div>
+</header>
 <div id="l-container">
 	<noscript>
 		<div class="box-noscript">
@@ -32,7 +51,37 @@
 	</noscript>
 	<div id="l-main">
 		<!--▼Mainvisual &amp; 宣言▼▼▼▼▼▼▼-->
-
+		<div class="sec-main">
+			<div class="box-main-visual">
+				<div class="box-main-visual__inner">
+					<h1 class="box-main-visual__title">
+						<img src="./img/main-txt-pc.png" alt="" class="fluid-image is-visiblePc">
+						<img src="./img/main-txt-sp.png" alt="" class="fluid-image is-visibleSp">
+					</h1>
+					<p class="box-main-visual__text">2050年カーボンニュートラルの<br>実現に向けて</p>
+					<div class="box-main-visual__image"><img src="./img/main-img.png" alt="" class="fluid-image"></div>
+					<div class="box-main-visual__deco01"><img src="./img/main-img-deco01.png" alt="" class="fluid-image"></div>
+					<div class="box-main-visual__deco02"><img src="./img/main-img-deco02.png" alt="" class="fluid-image"></div>
+					<div class="box-main-visual__deco03"><img src="./img/main-img-deco03.png" alt="" class="fluid-image"></div>
+					<p class="box-main-visual__scroll">scroll</p>
+				</div>
+			</div>
+			<div class="box-declaration">
+				<div class="box-declaration__inner">
+					<div class="box-declaration__content">
+						<h2 class="hdg-lv2">宣言</h2>
+						<p class="box-declaration__lead">わたしたちは、2050年カーボンニュートラルの実現に向けて、<br>「S＋３E」の同時達成を前提に、<br>供給側の「電源の脱炭素化」、<br>需要側の最大限の「電化の推進」に取り組み、<br>持てる技術、知恵を結集し、積極的に挑戦していきます。</p>
+						<div class="box-message">
+							<div class="box-message__inner">
+								<h3 class="box-message__title">カーボンニュートラルとは？</h3>
+								<p class="box-message__text">CO2をはじめとした温室効果ガスの排出を差し引きゼロにすることです。<br>温室効果ガスの排出を出来うる限り低減し、排出せざるを得なかったぶんについては同じ量を「吸収」または「除去」することで、全体として差し引きゼロを目指します。<br>日本の温室効果ガスの排出量は年間約12億トン※にのぼり、そのうちの8割以上が、燃料を燃焼したり電気や熱を使用したりすることで排出されるエネルギー起源CO2です。<br><span>※2018年</span></p>
+							</div>
+							<p class="box-message__circle"><img src="./img/img-circle.png" alt="" class="fluid-image"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!--▲Mainvisual &amp; 宣言▲▲▲▲▲▲▲-->
 
 		<!--sec-about-->
@@ -183,7 +232,25 @@
 		<!--▲取り組みの方向性▲▲▲▲▲▲▲-->
 	</div><!-- /#main -->
 </div><!-- /#container -->
-<footer></footer>
+<footer id="l-footer" class="l-footer">
+	<div class="l-footer__wrapper">
+		<p class="l-footer__title">関連リンク</p>
+		<nav class="nav-contentinfo">
+			<ul>
+				<li><a href="★★★" target="_blank">テキストテキストテキストテキスト</a></li>
+				<li><a href="★★★" target="_blank">テキストテキストテキストテキスト</a></li>
+				<li><a href="★★★" target="_blank">テキストテキストテキストテキスト</a></li>
+				<li><a href="★★★" target="_blank">テキストテキストテキストテキスト</a></li>
+				<li><a href="★★★" target="_blank">テキストテキストテキストテキスト</a></li>
+			</ul>
+		</nav>
+		<ul class="lst-social">
+			<li><a href="★★★" target="_blank"><img src="./img/icon-facebook.svg" alt=""></a></li>
+			<li><a href="★★★" target="_blank"><img src="./img/icon-twitter.svg" alt=""></a></li>
+		</ul>
+		<p class="txt-copyright"><small>Copyright(c) The Federation of Electric Power Companies of Japan.</small></p>
+	</div>
+</footer>
 </div><!-- /#document -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="./js/jquery.min.js"><\/script>');</script>
