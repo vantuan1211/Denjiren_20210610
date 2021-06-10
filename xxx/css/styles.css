@@ -1469,6 +1469,28 @@ textarea{
 		bottom: -430px;
 	}
 }
+@media screen and (max-width: 1200px){
+	.lst-about__item:nth-child(1) .box-about__text {
+		position: relative;
+		right: 20px;
+	}
+	.lst-about__item:nth-child(2) .box-about__image{
+		margin-top: 0;
+		width: 50%;
+	}
+	.lst-about__item:nth-child(2) .box-about__text{
+		width: 50%;
+		left: 20px;
+	}
+	.lst-about__item:nth-child(3) .box-about__image{
+		padding-left: 20px;
+		margin-top: 0;
+		width: calc(100% - 42%);
+	}
+	.lst-about__item:nth-child(4) .box-about__text{
+		padding-left: 20px;
+	}
+}
 /* sec-about */
 
 /* ▼取り組みの方向性 */
