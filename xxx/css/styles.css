@@ -668,7 +668,9 @@ textarea{
 	font-size: 1.2rem;
 }
 .txt-copyright small{
-	font-size: 100%;
+	font-size: 1.2rem;
+	line-height: 1.33;
+	color: #ccc;
 }
 .txt-note{
 	color: #666;
@@ -799,20 +801,22 @@ textarea{
 }
 
 /*Menu button*/
+.nav-global-wrap{
+	display: flex;
+	align-items: center;
+}
 .nav-global {
 	display: flex;
 	overflow: hidden;
 }
 .nav-global > li {
-	padding: 0 3rem;
+	padding: 0 2.5rem;
 }
 .nav-global > li > a {
 	position: relative;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	font-weight: bold;
-	display: flex;
-	height: 4rem;
-	align-items: center;
+	color: #fff;
 }
 .nav-global > li:last-child {
 	padding-right: 0;
@@ -830,160 +834,37 @@ textarea{
 	-webkit-transition: all 0.3s ease;
 	-webkit-transform: translateX(-50%);
 }
-.no-touchevents .nav-global > li a,
-.no-touchevents .nav-global > li > a:hover {
+.no-touchevents .nav-global > li a {
 	opacity: 1;
 	text-decoration: none;
-}
-.no-touchevents .nav-global > li:hover > a::after,
-.nav-global > li.is-hover > a::after,
-.nav-global > li.current > a::after {
-	width: 60%;
-	visibility: visible;
-}
-.nav-parent-wrap {
-	display: block;
-	position: absolute;
-	left: 0;
-	top: 100%;
-	width: 100%;
-	width: 100vw;
-	background: #2065c0;
-	visibility: hidden;
-	opacity: 0;
-	pointer-events: none;
-}
-.no-touchevents .nav-parent-wrap {
-	transition: all 0.1s ease;
-	-webkit-transition: all 0.1s ease;
-}
-.nav-global > li.is-hover .nav-parent-wrap {
-	visibility: visible;
-	opacity: 1;
-	pointer-events: auto;
-	z-index: 1;
-}
-.nav-parent {
-	display: flex;
-}
-.nav-parent__title {
-	width: 33.33vw;
-	color: #fff;
-	box-sizing: border-box;
-	font-size: 2.2rem;
-	text-align: center;
-	padding: 0 2rem;
-	margin: 4.6rem 0;
-	font-weight: bold;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	letter-spacing: 0.12em;
-}
-.nav-parent__title a {
-	color: #fff;
-}
-.nav-parent__title a:hover {
-	text-decoration: none;
-}
-.nav-parent__title:after {
-	position: absolute;
-	content: "";
-	height: 100%;
-	width: 0;
-	right: 0;
-	top: 0;
-	border-right: 0.1rem solid #fff;
-	opacity: 0.5;
-}
-.nav-global__sub {
-	position: relative;
-	width: 33.33vw;
-	box-sizing: border-box;
-	padding: 3.2rem 0 2.7rem 5%;
-	font-size: 1.6rem;
-}
-.nav-global__sub > li > a {
-	padding: 1rem 4rem 1rem 2rem;
-	display: block;
-	color: #fff;
-	transition: background 0.3s ease;
-	position: relative;
-	font-weight: bold;
-	-webkit-transition: background 0.3s ease;
-}
-.no-touchevents .nav-global__sub > li > a:hover {
-	color: #fff;
-}
-.nav-global__sub__title:after {
-	content: '';
-	display: inline-block;
-	width: 0.8rem;
-	height: 0.8rem;
-	border-top: 0.1rem solid #fff;
-	border-right: 0.1rem solid #fff;
-	transform: translate(-50%, -45%) rotate(45deg);
-	transform-origin: center;
-	position: absolute;
-	top: 50%;
-	right: 2rem;
-	visibility: hidden;
-	-webkit-transform: translate(-50%, -45%) rotate(45deg);
 }
 
-.nav-global__sub > li.is-active > a,
-.no-touchevents .nav-global__sub > li:hover > a {
-	background: #3378d3;
-	text-decoration: none;
+
+.nav-button{
+	margin-left: 78px;
 }
-.nav-global__sub > li.is-active > a:after,
-.no-touchevents .nav-global__sub > li:hover > a:after {
-	visibility: visible;
-}
-.nav-global__sub__child {
-	position: absolute;
-	background: #3378d3;
-	min-height: 100%;
-	left: 100%;
-	top: 0;
-	width: 33.333vw;
-	box-sizing: border-box;
+.nav-button a{
 	display: block;
-	padding: 3.2rem 0 2.7rem 10%;
-	visibility: hidden;
-	opacity: 0;
-	pointer-events: none;
-	font-size: 1.4rem;
-	font-weight: bold;
-}
-.nav-global__sub__child > li {
-	padding: 1.2rem 3rem 1.1rem 1rem;
-}
-.nav-global__sub__child > li > a {
-	display: inline;
-	color: #fff;
 	position: relative;
-	background-image: linear-gradient(#fff,#fff);
-	background-position: 0 100%;
-	background-repeat: no-repeat;
-	background-size: 0 0.1rem;
-	transition: background-size 0.3s;
-	padding-bottom: 0.4rem;
-	-webkit-transition: background-size 0.3s;
+	background: #fff;
+	color: #9EC7D1;
+	line-height: 1.33;
+	border-radius: 20px;
+	padding: 6px 54px 6px 20px;
 }
-.no-touchevents .nav-global__sub__child > li > a:hover {
-	color: #fff;
-	text-decoration: none;
-	background-size: 100% 0.1rem;
-	opacity: 1;
+.nav-button a::after{
+	content: "";
+	background: url('/xxx/img/icon-triangle.svg') center center no-repeat;
+	background-size: cover;
+	width: 9px;
+	height: 8px;
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
 }
-.nav-global__sub > li.is-active .nav-global__sub__child,
-.no-touchevents .nav-global__sub > li:hover .nav-global__sub__child {
-	display: block;
-	opacity: 1;
-	visibility: visible;
-	pointer-events: auto;
+.nav-link{
+	display: none;
 }
 
 @media only screen and (max-width:768px){
@@ -1118,15 +999,38 @@ textarea{
 
 /*Footer navi*/
 .nav-contentinfo {
+	padding-top: 66px;
 	text-align: center;
 }
 .nav-contentinfo ul{
-	display: inline-flex;
-	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -8px;
+}
+.nav-contentinfo ul li{
+	width: calc(25% - 16px);
+	padding: 0 8px;
+	margin-bottom: 20px;
 }
 .nav-contentinfo ul li a{
-	padding: 1rem;
+	position: relative;
+	font-size: 1.4rem;
+	padding: 16px 34px 16px 0;
 	display: block;
+	color: #9EC7D1;
+	border-bottom: 2px #9EC7D1 dotted;
+}
+.nav-contentinfo ul li a::after{
+	content: '';
+	background: url('/xxx/img/icon-external-link.svg') center center no-repeat;
+	background-size: cover;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+
 }
 
 /*Back to Top*/
@@ -1176,8 +1080,8 @@ textarea{
 /*>> 3-2. #l-header
 -------------------------------------------------- */
 #l-header{
-	background: #f4f3ef;
-	position: relative;
+	position: fixed;
+	width: 100%;
 }
 #l-header #sitelogo{
 	width: 25rem;
@@ -1214,18 +1118,32 @@ textarea{
 /*>> 3-4. #l-footer
 -------------------------------------------------- */
 #l-footer{
-	position: absolute;
-	width: 100%;
-	height: 10rem;
-	bottom: 0;
-	left: 0;
-	background: #f4f3ef;
+
 }
 .l-footer__wrapper{
-	padding: 2rem 0;
+	padding: 2.4rem 0;
 	margin: 0 4vw;
 }
+.l-footer__title{
+	font-size: 1.6rem;
+	font-weight: bold;
+	line-height: 1.3;
+	color: #9EC7D1;
+	text-align: center;
+	padding-top: 6.2em;
+}
 
+.lst-social{
+	margin: 100px 0 33px;
+	text-align: center;
+}
+.lst-social li{
+	display: inline-block;
+	padding: 0 20px;
+}
+.lst-social li a{
+	display: inline-block;
+}
 
 /*>> 3-4. OverLayerConfig [z-index]
 -------------------------------------------------- */
