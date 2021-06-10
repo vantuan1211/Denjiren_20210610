@@ -850,16 +850,17 @@ textarea{
 .nav-button a{
 	display: block;
 	position: relative;
+	font-size: 1.2rem;
 	background: #fff;
 	color: #9EC7D1;
 	line-height: 1.33;
 	border-radius: 20px;
-	padding: 6px 54px 6px 20px;
+	padding: 8px 42px 9px 20px;
 }
 .nav-button a::after{
 	content: "";
 	background: url('/xxx/img/icon-triangle.svg') center center no-repeat;
-	background-size: cover;
+	background-size: contain;
 	width: 9px;
 	height: 8px;
 	position: absolute;
