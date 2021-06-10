@@ -1122,7 +1122,9 @@ textarea{
 /*>> 3-4. #l-footer
 -------------------------------------------------- */
 #l-footer{
-
+	position: relative;
+	z-index: 2;
+	background: #fff;
 }
 .l-footer__wrapper{
 	padding: 2.4rem 0;
@@ -1341,6 +1343,8 @@ textarea{
 /* sec-about */
 .sec-about{
 	background: #9EC7D1;
+	position: relative;
+	z-index: 2;
 }
 .box-about{
 	display: flex;
@@ -1363,12 +1367,21 @@ textarea{
 /* sec-about */
 
 /* ▼取り組みの方向性 */
+.section-efforts{
+	position: relative;
+	z-index: 2;
+	background: #fff;
+}
 .section-roadmap {
 	background: #F5F9FA;
+	position: relative;
+	z-index: 2;
 }
 
 .section-plan {
 	background: #B7E3E5;
+	position: relative;
+	z-index: 2;
 }
 /* ▲取り組みの方向性 */
 
