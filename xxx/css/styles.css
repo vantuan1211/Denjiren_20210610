@@ -1248,9 +1248,29 @@ textarea{
 
 /* ▲Mainvisual &amp; 宣言 */
 
-/* ▼わたしたちの考え */
-
-/* ▲わたしたちの考え */
+/* sec-about */
+.sec-about{
+	background: #9EC7D1;
+}
+.box-about{
+	display: flex;
+	padding: 0 0 0 114px;
+	box-sizing: border-box;
+}
+.box-about__image{
+	width: 50%;
+}
+.box-about__text{
+	font-size: 16px;
+	color: #fff;
+	line-height: 2.625;
+	letter-spacing: 0.01em;
+	padding-top: 101px;
+}
+.box-about--reverse .box-about__image{
+	order: 2;
+}
+/* sec-about */
 
 /* ▼取り組みの方向性 */
 .section-roadmap {
