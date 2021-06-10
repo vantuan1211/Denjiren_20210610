@@ -596,8 +596,9 @@ textarea{
 -------------------------------------------------- */
 /*>>> 2-4-1.  Wrapper     [wrp-***]*/
 .wrp-container{
-	margin: 0 4vw;
+	margin: 0 auto;
 	max-width: 110rem;
+	padding: 0 2rem;
 }
 .wrp-container:after{
 	content: "";
@@ -687,21 +688,27 @@ textarea{
 
 /*>>> 2-4-4.  Button   [btn-***]*/
 .btn{
-	background-color: #424242;
-	border-radius: 2rem;
-	border: 0;
+	background-color: #7BBDD1;
+	border-radius: 4rem;
+	border: solid 0.1rem #fff;
 	box-sizing: border-box;
 	color: #fff;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 1.4rem;
+	font-weight: bold;
 	line-height: 1;
 	padding: 1.5rem;
 	text-align: center;
 	text-decoration: none;
 	vertical-align: middle;
 	overflow: hidden;
-	min-width: 28rem;
+	min-width: 20rem;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.btn:hover{
+	opacity: 0.7;
 }
 .no-touchevents .btn:hover{
 	text-decoration: none;
@@ -1273,13 +1280,67 @@ textarea{
 /* sec-about */
 
 /* ▼取り組みの方向性 */
-.section-roadmap {
+.section-roadmap{
 	background: #F5F9FA;
+	padding-bottom: 24rem;
+}
+.box-roadmap__image {
+	max-width: 94.4rem;
+	margin: 0 auto;
+	text-align: center;
+}
+.box-roadmap__image figure{
+	border-radius: 4rem;
+	overflow: hidden;
+}
+@media only screen and (max-width: 959px){
+	.box-roadmap__image img{
+		width: 100%;
+	}
+}
+.section-plan{
+	background: #B7E3E5;
+	padding-bottom: 12rem;
+}
+.section-plan .hdg-lv2{
+	color: #fff;
+}
+.section-plan__container{
+	max-width: 94.4rem;
+	margin: 0 auto;
+	text-align: center;
+}
+.section-plan__image{
+	position: relative;
+}
+.section-plan__bgIcon{
+	position: absolute;
+}
+.section-plan__bgIcon--01{
+	top: -15rem;
+	left: 0;
+	width: 8.2rem;
+}
+.section-plan__bgIcon--02{
+	bottom: 3rem;
+	left: 10rem;
+	width: 6.4rem;
+}
+.section-plan__bgIcon--03{
+	bottom: -2rem;
+	right: -6rem;
+	width: 9.4rem;
+}
+.section-plan__bgIcon--04{
+	bottom: -10rem;
+	right: 2rem;
+	width: 6.4rem;
+}
+.section-plan__button {
+	margin-top: 7rem;
+	text-align: center;
 }
 
-.section-plan {
-	background: #B7E3E5;
-}
 /* ▲取り組みの方向性 */
 
 
