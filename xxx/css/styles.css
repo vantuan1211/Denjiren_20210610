@@ -2109,9 +2109,17 @@ textarea{
 	display: none;
 }
 .lst-accodion__item .lst-accodion-icon__minus {
+	display: none;
+}
+.lst-accodion__item.is-opened .lst-accodion-icon__minus {
 	display: block;
 }
-
+.lst-accodion__item.is-opened .box-accodion__head{
+	background: #fff;
+}
+.lst-accodion__item{
+	margin-bottom: 10px;
+}
 .lst-dot--small li{
 	font-size: 1.2rem;
 }
