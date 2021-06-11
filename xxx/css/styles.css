@@ -1973,9 +1973,57 @@ textarea{
 	display: inline-block;
 	margin-right: 10px;
 }
+.lst-note--small li{
+	font-size: 1.2rem;
+}
+.lst-note--small li:before{
+	width: 4px;
+	height: 4px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.lst-note-01 li{
+	font-size: 10px;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	color: #343434;
+	padding-top: 16px;
+}
 
 
 /*<table></table>*/
+.tbl-primary{
+	width: 100%;
+	border: solid 1px #9EC7D1;
+	border-radius: 16px;
+	border-collapse: separate;
+	margin-top: 17px;
+	margin-bottom: 16px;
+	overflow: hidden;
+}
+.tbl-primary td{
+	border: solid 1px #EAEAEA;
+	vertical-align: middle;
+	padding: 16px;
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+.tbl-primary .tbl-center{
+	text-align: center;
+}
+.tbl-primary .col-01{
+	width: 10%;
+}
+.tbl-primary .col-02{
+	width: 13%;
+}
+.tbl-primary .col-03{
+	width: 77%;
+}
+
+
+
 /* -----------------------------------------------
 *> [4. Print Style]
 -------------------------------------------------- */
