@@ -2006,19 +2006,18 @@ textarea{
 	transform: translateY(-50%);
 	right: 20px;
 }
-.is-opened.
-=======
-.lst-note--small li{
+
+.lst-dot--small li{
 	font-size: 1.2rem;
 }
-.lst-note--small li:before{
+.lst-dot--small li:before{
 	width: 4px;
 	height: 4px;
 	top: 50%;
 	transform: translateY(-50%);
 }
 
-.lst-note-01 li{
+.lst-note li{
 	font-size: 10px;
 	line-height: 1.5;
 	letter-spacing: 0.1em;
@@ -2027,7 +2026,7 @@ textarea{
 	padding-left: 1.2em;
 	position: relative;
 }
-.lst-note-01 li span{
+.lst-note li span{
 	position: absolute;
 	left: 0;
 }
