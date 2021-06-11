@@ -1466,7 +1466,7 @@ textarea{
 /* sec-about */
 .sec-about{
 	position: relative;
-	z-index: 2;
+	z-index: 3;
 	padding: 175px 0 430px;
 	background: #fff;
 }
