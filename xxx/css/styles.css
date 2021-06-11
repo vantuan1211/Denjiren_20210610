@@ -1409,22 +1409,25 @@ textarea{
 .sec-about{
 	position: relative;
 	z-index: 2;
-	padding: 60px 0 185px;
+	padding: 175px 0 430px;
 	background: #fff;
 }
 .sec-about__inner{
 	position: relative;
+	background: #9EC7D1;
+}
+.sec-about__content{
+	position: relative;
 	max-width: 1366px;
-	padding: 115px 115px 80px;
+	padding: 0 115px;
 	box-sizing: border-box;
 	margin: 0 auto;
-	background: #9EC7D1;
 }
 .sec-about__inner:before {
 	content: "";
 	background: url(../img/about-img01.png) no-repeat;
 	position: absolute;
-	top: -298px;
+	top: -414px;
 	background-size: cover;
 	width: 143px;
 	height: 167px;
@@ -1433,7 +1436,7 @@ textarea{
 }
 .sec-about .hdg-lv2{
 	position: absolute;
-	top: -80px;
+	top: -195px;
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 2;
@@ -1466,7 +1469,7 @@ textarea{
 	position: absolute;
 	width: 100vw;
 	height: 50vw;
-	bottom: 0;
+	bottom: 165px;
 	left: 0;
 	right: 0;
 	overflow: hidden;
@@ -1562,14 +1565,6 @@ textarea{
 	padding-top: 94px;
 	width: 65%;
 }
-@media screen and (min-width: 1367px){
-	.sec-about{
-		margin-bottom: 430px;
-	}
-	.sec-about:after{
-		bottom: -430px;
-	}
-}
 @media screen and (max-width: 1200px){
 	.sec-about__inner{
 		padding: 0 20px;
@@ -1647,7 +1642,9 @@ textarea{
 	padding: 0 2rem;
 	position: relative;
 }
-
+.section-efforts .hdg-lv2{
+	padding-top: 0;
+}
 .box-efforts{
 	display: block;
 	width: 100%;
@@ -1804,8 +1801,8 @@ textarea{
 
 .box-scrollDown{
 	position: absolute;
-	top: -12.3rem;
-	right: 14.8rem;
+	bottom: 85px;
+	right: 242px;
 }
 .box-scrollDown__circle{
 	width: 16rem;
@@ -1975,6 +1972,7 @@ textarea{
 	display: inline-block;
 	margin-right: 10px;
 }
+
 /*box-accodion*/
 .box-accodion__head{
 	background: #F7F7F7;
@@ -2009,8 +2007,58 @@ textarea{
 	right: 20px;
 }
 .is-opened.
+=======
+.lst-note--small li{
+	font-size: 1.2rem;
+}
+.lst-note--small li:before{
+	width: 4px;
+	height: 4px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.lst-note-01 li{
+	font-size: 10px;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	color: #343434;
+	padding-top: 16px;
+}
+
 
 /*<table></table>*/
+.tbl-primary{
+	width: 100%;
+	border: solid 1px #9EC7D1;
+	border-radius: 16px;
+	border-collapse: separate;
+	margin-top: 17px;
+	margin-bottom: 16px;
+	overflow: hidden;
+}
+.tbl-primary td{
+	border: solid 1px #EAEAEA;
+	vertical-align: middle;
+	padding: 16px;
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+.tbl-primary .tbl-center{
+	text-align: center;
+}
+.tbl-primary .col-01{
+	width: 10%;
+}
+.tbl-primary .col-02{
+	width: 13%;
+}
+.tbl-primary .col-03{
+	width: 77%;
+}
+
+
+
 /* -----------------------------------------------
 *> [4. Print Style]
 -------------------------------------------------- */
