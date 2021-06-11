@@ -1466,7 +1466,7 @@ textarea{
 /* sec-about */
 .sec-about{
 	position: relative;
-	z-index: 2;
+	z-index: 3;
 	padding: 175px 0 430px;
 	background: #fff;
 }
@@ -2196,9 +2196,20 @@ textarea{
 	display: none;
 }
 .lst-accodion__item .lst-accodion-icon__minus {
+	display: none;
+}
+.lst-accodion__item.is-opened .lst-accodion-icon__minus {
 	display: block;
 }
-
+.lst-accodion__item.is-opened .box-accodion__head{
+	background: #fff;
+}
+.lst-accodion__item{
+	margin-bottom: 10px;
+}
+.lst-accodion__item:last-child{
+	margin-bottom: 0;
+}
 .lst-dot--small li{
 	font-size: 1.2rem;
 }
