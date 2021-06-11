@@ -572,7 +572,7 @@ textarea{
 .is-visibleTablet{
 	display: none!important;
 }
-@media only screen and (max-width:959px){
+@media only screen and (max-width:768px){
 	.is-visiblePc{
 		display: none!important;
 	}
@@ -716,6 +716,18 @@ textarea{
 	min-width: 20rem;
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
+}
+.btn span{
+	position: relative;
+}
+.btn span::after {
+	content: "";
+	width: 0.9rem;
+	height: 0.9rem;
+	display: inline-block;
+	background: url(../img/icon-next-on.svg) no-repeat center center;
+	background-size: cover;
+	margin-left: 1rem;
 }
 .btn:hover{
 	opacity: 0.7;
@@ -1811,6 +1823,14 @@ textarea{
 	line-height: 1.4;
 	margin-top: 3rem;
 }
+@media only screen and (min-width: 769px) and (max-width: 1150px){
+	.box-efforts__text{
+		width: 37rem;
+	}
+	.box-efforts__image{
+		width: calc(100% - 37rem);
+	}
+}
 @media only screen and (max-width: 768px){
 	.sec-about{
 		overflow: hidden;
@@ -1952,7 +1972,8 @@ textarea{
 }
 @media only screen and (max-width: 768px){
 	.box-scrollDown{
-		top: -100rem;
+		top: auto;
+		bottom: 6rem;
 		right: 4.5rem;
 	}
 }
@@ -1999,7 +2020,20 @@ textarea{
 	border-radius: 4rem;
 	overflow: hidden;
 }
-@media only screen and (max-width: 959px){
+@media only screen and (max-width: 768px){
+	.section-roadmap{
+		padding-bottom: 20rem;
+	}
+	.section-roadmap__circleBottom::before {
+		width: 260vw;
+		height: 230vw;
+		transform: none;
+		left: auto;
+		right: -32%;
+	}
+	.box-roadmap .hdg-lv2{
+		padding-bottom: 4.2rem;
+	}
 	.box-roadmap__image img{
 		width: 100%;
 	}
@@ -2021,6 +2055,9 @@ textarea{
 }
 .section-plan__image{
 	position: relative;
+}
+.section-plan__image img{
+	margin: 0 auto;
 }
 .section-plan__bgIcon{
 	position: absolute;
@@ -2050,15 +2087,27 @@ textarea{
 	text-align: center;
 }
 @media only screen and (max-width: 768px){
-	.section-plan__bgIcon--01,
+	.section-plan .hdg-lv2{
+		padding-top: 7rem;
+		line-height: 2;
+	}
+	.section-plan__image{
+		margin-top: -3.5rem;
+	}
+	.section-plan__button{
+		margin-top: 3.6rem;
+	}
+	.section-plan__bgIcon--01{
+		left: -1.1rem;
+		top: -15.1rem;
+	}
+	.section-plan__bgIcon--02,
 	.section-plan__bgIcon--03{
 		display: none;
 	}
-	.section-plan__bgIcon--02{
-		left: 0;
-	}
 	.section-plan__bgIcon--04{
-		right: 0;
+		right: -1.2rem;
+		bottom: -14.3rem;
 	}
 }
 
