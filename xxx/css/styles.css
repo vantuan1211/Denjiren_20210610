@@ -1621,7 +1621,6 @@ textarea{
 	display: block;
 	width: 100%;
 	margin: 0 -0.8rem;
-	padding-top: 2.7rem;
 }
 .box-efforts::after{
 	content: "";
@@ -1652,11 +1651,10 @@ textarea{
 }
 .box-efforts__number{
 	display: block;
-	width: 4.5rem;
+	width: 4.4rem;
 	position: absolute;
-	top: -1.5rem;
-	left: 3rem;
-	z-index: 9999;
+	top: -1.3rem;
+	left: 3.1rem;
 }
 .box-efforts__title{
 	font-size: 1.6rem;
@@ -1699,6 +1697,9 @@ textarea{
 .box-efforts .slick-list{
 	overflow-y: visible;
 	overflow-x: hidden;
+}
+.box-efforts .slick-track{
+	padding-top: 2.8rem;
 }
 .box-efforts .slick-prev::before,
 .box-efforts .slick-next::before{
