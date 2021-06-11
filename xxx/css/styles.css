@@ -1986,6 +1986,12 @@ textarea{
 	letter-spacing: 0.1em;
 	color: #343434;
 	padding-top: 16px;
+	padding-left: 1.2em;
+	position: relative;
+}
+.lst-note-01 li span{
+	position: absolute;
+	left: 0;
 }
 
 
