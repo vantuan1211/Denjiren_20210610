@@ -1815,8 +1815,59 @@ textarea{
 /*detail.html */
 .sec-product{
 	background: #B7E3E5;
+	padding-top: 100px;
 }
-
+.box-product{
+	position: relative;
+	background: #fff;
+	border-radius: 40px;
+	left: 15%;
+	padding: 0 56px;
+	box-sizing: border-box;
+}
+.box-product__num{
+	position: absolute;
+	left: -15%;
+	top: 0;
+}
+.box-product__image{
+	position: absolute;
+	left: -166px;
+	top: 142px;
+}
+.box-product__image img{
+	border-radius: 40px;
+}
+.box-product__title{
+	display: flex;
+	padding: 58px 56px 0;
+	box-sizing: border-box;
+	align-items: center;
+}
+.box-product__title .hdg-lv2{
+	padding: 0;
+}
+.box-product__subtitle{
+	padding-left: 20px;
+}
+.box-data--01{
+	margin-top: 65px;
+	padding-left: 190px;
+}
+.box-product__title{
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 0.01em;
+	line-height: 1.5;
+	color: #343434;
+}
+.box-data__text{
+	font-size: 16px;
+	margin-top: 17px;
+	line-height: 2;
+	letter-spacing: 0.01em;
+	color: #343434;
+}
 /* -----------------------------------------------
 *> [4. Print Style]
 -------------------------------------------------- */
