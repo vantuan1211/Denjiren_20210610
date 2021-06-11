@@ -94,6 +94,7 @@ var Common = (function () {
 		_this.smoothScroll();
 		_this.effortsSlide();
 		_this.scrollRotate();
+		_this.accordion();
 	}
 
 	/**
@@ -336,6 +337,24 @@ var Common = (function () {
 				$( this ).css('transform', 'rotate(' + window.pageYOffset/10 + 'deg)');
 			});
 		};
+	}
+
+	/* accordion */
+	Common.prototype.accordion = function(){
+		$('.js-accordion-parent').each(function(){
+			$('.js-accordion-trigger').click(function(){
+				var $this = $(this);
+				var $parent = $this.parents('.js-accordion-parent');
+				var $content = $this.find('.js-accordion-content');
+				if(!$this.hasClass('is-opened')) {
+					$this.addClass('is-opened');
+					$content.slideDown();
+				}else {
+					$this.removeClass('is-opened');
+					$content.slideUp();
+				}
+			});
+		});
 	}
 
 	return Common;
