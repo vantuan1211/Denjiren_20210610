@@ -2006,8 +2006,12 @@ textarea{
 	transform: translateY(-50%);
 	right: 20px;
 }
-.is-opened.
-=======
+.lst-accodion__item.is-opened .lst-accodion-icon__plus {
+	display: none;
+}
+.lst-accodion__item .lst-accodion-icon__minus {
+	display: block;
+}
 .lst-note--small li{
 	font-size: 1.2rem;
 }
