@@ -1157,6 +1157,24 @@ textarea{
 	display: inline-block;
 }
 
+.btn-footer{
+	max-width: 208px;
+	margin: 0 auto;
+	padding-top: 135px;
+	margin-bottom: -20px;
+}
+.btn-footer a{
+	display: block;
+	text-align: center;
+	border: solid 1px #9EC7D1;
+	border-radius: 40px;
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: #9EC7D1;
+	letter-spacing: 0.1em;
+	padding: 17px 0 18px;
+}
+
 @media only screen and (max-width:768px){
 	.l-footer__wrapper{
 		padding: 24px 40px 10px;
@@ -1183,6 +1201,12 @@ textarea{
 	}
 	.lst-social{
 		margin: 79px 0 33px;
+	}
+
+	.btn-footer{
+		max-width: 240px;
+		padding-top: 55px;
+		margin-bottom: 0;
 	}
 }
 
