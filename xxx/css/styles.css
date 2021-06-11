@@ -1953,15 +1953,17 @@ textarea{
 	letter-spacing: 0.01em;
 	color: #343434;
 }
-.lst-note{
+.lst-dot{
 	margin-top: 10px;
 }
-.lst-note li{
+.lst-dot li{
 	position: relative;
 	line-height: 2;
 	font-size: 16px;
+	text-indent: -20px;
+	margin-left: 20px;
 }
-.lst-note li:before{
+.lst-dot li:before{
 	content: "";
 	width: 8px;
 	height: 8px;
@@ -1973,7 +1975,40 @@ textarea{
 	display: inline-block;
 	margin-right: 10px;
 }
-
+/*box-accodion*/
+.box-accodion__head{
+	background: #F7F7F7;
+	padding: 26px 70px 26px 20px;
+	box-sizing: border-box;
+	border-radius: 16px;
+	position: relative;
+	cursor: pointer;
+}
+.box-accodion__title{
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 2;
+	letter-spacing: 0.01em;
+	color: #343434;
+}
+.box-accodion__content{
+	padding:26px 20px;
+	box-sizing: border-box;
+	display: none;
+}
+.box-accodion__text{
+	font-size: 14px;
+	line-height: 2;
+	letter-spacing: 0.01em;
+	color: #343434;
+}
+.lst-accodion-icon{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 20px;
+}
+.is-opened.
 
 /*<table></table>*/
 /* -----------------------------------------------
