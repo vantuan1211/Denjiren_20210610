@@ -1409,22 +1409,25 @@ textarea{
 .sec-about{
 	position: relative;
 	z-index: 2;
-	padding: 60px 0 185px;
+	padding: 175px 0 430px;
 	background: #fff;
 }
 .sec-about__inner{
 	position: relative;
+	background: #9EC7D1;
+}
+.sec-about__content{
+	position: relative;
 	max-width: 1366px;
-	padding: 115px 115px 80px;
+	padding: 0 115px;
 	box-sizing: border-box;
 	margin: 0 auto;
-	background: #9EC7D1;
 }
 .sec-about__inner:before {
 	content: "";
 	background: url(../img/about-img01.png) no-repeat;
 	position: absolute;
-	top: -298px;
+	top: -414px;
 	background-size: cover;
 	width: 143px;
 	height: 167px;
@@ -1433,7 +1436,7 @@ textarea{
 }
 .sec-about .hdg-lv2{
 	position: absolute;
-	top: -80px;
+	top: -195px;
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 2;
@@ -1466,7 +1469,7 @@ textarea{
 	position: absolute;
 	width: 100vw;
 	height: 50vw;
-	bottom: 0;
+	bottom: 165px;
 	left: 0;
 	right: 0;
 	overflow: hidden;
@@ -1562,14 +1565,6 @@ textarea{
 	padding-top: 94px;
 	width: 65%;
 }
-@media screen and (min-width: 1367px){
-	.sec-about{
-		margin-bottom: 430px;
-	}
-	.sec-about:after{
-		bottom: -430px;
-	}
-}
 @media screen and (max-width: 1200px){
 	.sec-about__inner{
 		padding: 0 20px;
@@ -1647,7 +1642,9 @@ textarea{
 	padding: 0 2rem;
 	position: relative;
 }
-
+.section-efforts .hdg-lv2{
+	padding-top: 0;
+}
 .box-efforts{
 	display: block;
 	width: 100%;
@@ -1804,8 +1801,8 @@ textarea{
 
 .box-scrollDown{
 	position: absolute;
-	top: -12.3rem;
-	right: 14.8rem;
+	bottom: 85px;
+	right: 242px;
 }
 .box-scrollDown__circle{
 	width: 16rem;
