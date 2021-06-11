@@ -2180,6 +2180,9 @@ textarea{
 .lst-accodion__item{
 	margin-bottom: 10px;
 }
+.lst-accodion__item:last-child{
+	margin-bottom: 0;
+}
 .lst-dot--small li{
 	font-size: 1.2rem;
 }
