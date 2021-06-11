@@ -1757,7 +1757,6 @@ textarea{
 	float: left;
 	box-sizing: border-box;
 }
-.box-efforts__image-slider{}
 .box-efforts__item{
 	background: #F7F7F7;
 	border-radius: 4rem;
@@ -1812,6 +1811,45 @@ textarea{
 	line-height: 1.4;
 	margin-top: 3rem;
 }
+@media only screen and (max-width: 768px){
+	.sec-about{
+		overflow: hidden;
+	}
+	.section-efforts{
+		padding-bottom: 11rem;
+	}
+	.section-efforts__container{
+		padding: 0;
+	}
+	.box-efforts{
+		margin: 0;
+	}
+	.box-efforts__text,
+	.box-efforts__image{
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+	.box-efforts__text{
+		padding: 0 2rem;
+	}
+	.box-efforts__item{
+		padding-bottom: 13.7rem;
+	}
+	.box-efforts__title{
+		display: none;
+	}
+	.box-efforts__description{
+		margin-top: 2.5rem;
+	}
+	.box-efforts__image{
+		margin-top: -3.3rem;
+	}
+	.box-efforts__image-img figcaption{
+		margin-top: 2.5rem;
+	}
+}
+
 
 /* Custom slick */
 .box-efforts .slick-list{
@@ -1890,6 +1928,17 @@ textarea{
 	background-size: cover;
 	margin-left: 1rem;
 }
+@media only screen and (max-width: 768px){
+	.box-efforts .slick-track{
+		padding-top: 6.8rem;
+	}
+	.box-efforts .slick-arrow{
+		bottom: 5.6rem;
+	}
+	.box-efforts__image .slick-track{
+		padding-top: 0;
+	}
+}
 
 .box-scrollDown{
 	position: absolute;
@@ -1901,13 +1950,12 @@ textarea{
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.8s ease;
 }
-@media only screen and (max-width: 959px){
+@media only screen and (max-width: 768px){
 	.box-scrollDown{
-		bottom: 62px;
-		right: 45px;
+		top: -100rem;
+		right: 4.5rem;
 	}
 }
-	
 
 .section-roadmap {
 	background: #F5F9FA;
@@ -1973,6 +2021,18 @@ textarea{
 .section-plan__button {
 	margin-top: 7rem;
 	text-align: center;
+}
+@media only screen and (max-width: 768px){
+	.section-plan__bgIcon--01,
+	.section-plan__bgIcon--03{
+		display: none;
+	}
+	.section-plan__bgIcon--02{
+		left: 0;
+	}
+	.section-plan__bgIcon--04{
+		right: 0;
+	}
 }
 
 /* ▲取り組みの方向性 */
