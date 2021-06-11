@@ -1359,6 +1359,10 @@ textarea{
 }
 .sec-about__inner{
 	position: relative;
+	max-width: 1366px;
+	padding: 0 115px;
+	box-sizing: border-box;
+	margin: 0 auto;
 }
 .sec-about__inner:before {
 	content: "";
@@ -1379,7 +1383,9 @@ textarea{
 }
 .sec-about:before{
 	content: "";
-	background: url('../img/ellipse-top.jpg') no-repeat top center;
+	background: #9EC7D1;
+	/*border-radius: 50vw 50vw 0 50vw ;*/
+	/*background: url('../img/ellipse-top.jpg') no-repeat top center;*/
 	position: absolute;
 	top: -162px;
 	left: 0;
@@ -1390,7 +1396,8 @@ textarea{
 }
 .sec-about:after{
 	content: "";
-	background: url(../img/ellipse-botton.png) no-repeat bottom center;
+	/*background: url(../img/ellipse-botton.png) no-repeat bottom center;*/
+	background: #9EC7D1;
 	position: absolute;
 	bottom: -260px;
 	left: 0;
@@ -1401,65 +1408,78 @@ textarea{
 }
 .box-about{
 	display: flex;
-	/*padding: 0 0 0 114px;*/
 	box-sizing: border-box;
 	position: relative;
 	z-index: 2;
-}
-.box-about__image{
-	width: 64%;
+	align-items: center;
+	flex-wrap: nowrap;
 }
 .box-about__text{
 	font-size: 16px;
 	color: #fff;
 	line-height: 2.625;
 	letter-spacing: 0.01em;
-	padding-top: 90px;
-	width: calc(100% - 64%);
+	padding-top: 58px;
 }
 .box-about--reverse .box-about__image{
 	order: 2;
 }
 .lst-about{
-	margin-top: 123px;
+	margin-top: 155px;
 }
 .lst-about__item{
 	position: relative;
 }
+.lst-about__item:nth-child(1) .box-about{
+	align-items: flex-start;
+}
+.box-about__image img{
+	width: 100%;
+}
+.lst-about__item:nth-child(1) .box-about__image{
+	width: 57%;
+}
 .lst-about__item:nth-child(1) .box-about__text {
 	position: relative;
-	right: 88px;
+	width: 43%;
+	left: 24px;
+}
+.lst-about__item:nth-child(2) .box-about{
+	align-items: flex-start;
 }
 .lst-about__item:nth-child(2) .box-about__text {
 	position: relative;
-	left: 211px;
+	left: 95px;
 	line-height: 2;
-	padding-top: 123px;
-	width: 87%;
+	padding-top: 145px;
+	width: 52%;
 }
 .lst-about__item:nth-child(2) .box-about__image{
 	position: relative;
-	margin-top: -12px;
+	margin-top: 38px;
+	width: 48%;
+	right: -91px;
 }
 .lst-about__item:nth-child(3) .box-about__image{
 	position: relative;
-	margin-top: -7px;
-	width: 42%;
-	padding-left: 116px;
+	margin-top: 7px;
+	width: 47%;
 }
 .lst-about__item:nth-child(3) .box-about__text {
-	padding-top: 84px;
+	padding-top: 30px;
 	line-height: 2;
+	width: 43%;
+	padding-left: 41px;
 }
 .lst-about__item:nth-child(4) .box-about__text{
 	position: relative;
-	width: 30%;
-	padding-left: 113px;
-	padding-top: 264px;
+	width: 35%;
+	padding-top: 93px;
 	line-height: 2;
 }
 .lst-about__item:nth-child(4) .box-about__image{
 	padding-top: 94px;
+	width: 65%;
 }
 @media screen and (min-width: 1367px){
 	.sec-about{
@@ -1470,25 +1490,65 @@ textarea{
 	}
 }
 @media screen and (max-width: 1200px){
+	.sec-about__inner{
+		padding: 0 20px;
+	}
+	.lst-about__item{
+		margin-bottom: 30px;
+	}
 	.lst-about__item:nth-child(1) .box-about__text {
 		position: relative;
-		right: 20px;
+		padding-right: 20px;
 	}
 	.lst-about__item:nth-child(2) .box-about__image{
 		margin-top: 0;
-		width: 50%;
+		right: 0;
 	}
 	.lst-about__item:nth-child(2) .box-about__text{
-		width: 50%;
-		left: 20px;
+		left: 0;
+		padding-top: 80px;
 	}
 	.lst-about__item:nth-child(3) .box-about__image{
-		padding-left: 20px;
 		margin-top: 0;
-		width: calc(100% - 42%);
 	}
 	.lst-about__item:nth-child(4) .box-about__text{
-		padding-left: 20px;
+		margin-right: 35px;
+	}
+}
+@media screen and (max-width: 767px){
+	.sec-about__inner{
+		padding: 0;
+	}
+	.lst-about {
+		margin-top: 80px;
+	}
+	.lst-about__item{
+		margin-bottom: 115px;
+	}
+	.box-about{
+		display: block;
+	}
+	.lst-about__item:nth-child(1) .box-about__image,
+	.lst-about__item:nth-child(2) .box-about__image,
+	.lst-about__item:nth-child(3) .box-about__image,
+	.lst-about__item:nth-child(4) .box-about__image{
+		width: 100%;
+		padding-top: 0;
+		text-align: center;
+	}
+	.lst-about__item:nth-child(1) .box-about__text,
+	.lst-about__item:nth-child(2) .box-about__text,
+	.lst-about__item:nth-child(3) .box-about__text,
+	.lst-about__item:nth-child(4) .box-about__text{
+		width: 100%;
+		padding: 0 20px;
+		box-sizing: border-box;
+		left: 0;
+		right: 0;
+		line-height: 2;
+	}
+	.box-about__text{
+		margin-top: 40px;
 	}
 }
 /* sec-about */
