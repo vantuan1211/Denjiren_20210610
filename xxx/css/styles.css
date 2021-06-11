@@ -1387,15 +1387,16 @@ textarea{
 .sec-about:before{
 	content: "";
 	background: #9EC7D1;
-	/*border-radius: 50vw 50vw 0 50vw ;*/
-	/*background: url('../img/ellipse-top.jpg') no-repeat top center;*/
 	position: absolute;
 	top: -162px;
 	left: 0;
 	right: 0;
 	display: block;
-	padding-bottom: 23.42%;
+	width: 100vw;
+	height: 100vh;
 	z-index: 1;
+	border-top-left-radius: 50vw;
+	border-top-right-radius: 50vw;
 }
 .sec-about:after{
 	content: "";
