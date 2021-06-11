@@ -93,6 +93,7 @@ var Common = (function () {
 		_this.initGlobalNav();
 		_this.smoothScroll();
 		_this.effortsSlide();
+		_this.scrollRotate();
 	}
 
 	/**
@@ -314,12 +315,27 @@ var Common = (function () {
 			nextArrow:"<p class='slick-next'><span>NEXT</span></p>"
 		});
 		$('.js-slickImage').slick({
+			infinite: false,
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			asNavFor: '.js-slickText',
 			fade: true,
 			arrows: false,
 		});
+	}
+
+	/**
+	* Scroll Rotate
+	*/
+	Common.prototype.scrollRotate = function(){
+		window.onscroll = function () {
+			var scroll = $('.js-scrollRotate');
+
+			scroll.each(function() {
+				$( this ).css('-webkit-transform', 'rotate(' + window.pageYOffset/10 + 'deg)');
+				$( this ).css('transform', 'rotate(' + window.pageYOffset/10 + 'deg)');
+			});
+		};
 	}
 
 	return Common;

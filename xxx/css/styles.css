@@ -708,7 +708,7 @@ textarea{
 	font-size: 1.4rem;
 	font-weight: bold;
 	line-height: 1;
-	padding: 1.5rem;
+	padding: 2.2rem 1.5rem;
 	text-align: center;
 	text-decoration: none;
 	vertical-align: middle;
@@ -1157,6 +1157,24 @@ textarea{
 	display: inline-block;
 }
 
+.btn-footer{
+	max-width: 208px;
+	margin: 0 auto;
+	padding-top: 135px;
+	margin-bottom: -20px;
+}
+.btn-footer a{
+	display: block;
+	text-align: center;
+	border: solid 1px #9EC7D1;
+	border-radius: 40px;
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: #9EC7D1;
+	letter-spacing: 0.1em;
+	padding: 17px 0 18px;
+}
+
 @media only screen and (max-width:768px){
 	.l-footer__wrapper{
 		padding: 24px 40px 10px;
@@ -1183,6 +1201,12 @@ textarea{
 	}
 	.lst-social{
 		margin: 79px 0 33px;
+	}
+
+	.btn-footer{
+		max-width: 240px;
+		padding-top: 55px;
+		margin-bottom: 0;
 	}
 }
 
@@ -1590,6 +1614,7 @@ textarea{
 	max-width: 113.5rem;
 	margin: 0 auto;
 	padding: 0 2rem;
+	position: relative;
 }
 
 .box-efforts{
@@ -1621,7 +1646,7 @@ textarea{
 	position: relative;
 }
 .box-efforts__content{
-	height: 290px;
+	height: 22.2rem;
 	overflow-y: auto;
 	padding-right: 2rem;
 }
@@ -1631,6 +1656,7 @@ textarea{
 	position: absolute;
 	top: -1.5rem;
 	left: 3rem;
+	z-index: 9999;
 }
 .box-efforts__title{
 	font-size: 1.6rem;
@@ -1669,7 +1695,11 @@ textarea{
 	margin-top: 3rem;
 }
 
-/* Custom arrow */
+/* Custom slick */
+.box-efforts .slick-list{
+	overflow-y: visible;
+	overflow-x: hidden;
+}
 .box-efforts .slick-prev::before,
 .box-efforts .slick-next::before{
 	display: none;
@@ -1739,10 +1769,17 @@ textarea{
 	background-size: cover;
 	margin-left: 1rem;
 }
-.box-efforts .slick-prev.slick-disabled{
 
+.box-scrollDown{
+	position: absolute;
+	top: -12.3rem;
+	right: 14.8rem;
 }
-.box-efforts .slick-next.slick-disabled{}
+.box-scrollDown__circle{
+	width: 16rem;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.8s ease;
+}
 	
 
 .section-roadmap {
@@ -1773,6 +1810,7 @@ textarea{
 }
 .section-plan .hdg-lv2{
 	color: #fff;
+	padding-bottom: 2rem;
 }
 .section-plan__container{
 	max-width: 94.4rem;
@@ -1786,23 +1824,23 @@ textarea{
 	position: absolute;
 }
 .section-plan__bgIcon--01{
-	top: -15rem;
-	left: 0;
+	top: -9.9rem;
+	left: -8rem;
 	width: 8.2rem;
 }
 .section-plan__bgIcon--02{
-	bottom: 3rem;
-	left: 10rem;
+	bottom: 1.5rem;
+	left: 8.7rem;
 	width: 6.4rem;
 }
 .section-plan__bgIcon--03{
-	bottom: -2rem;
-	right: -6rem;
+	bottom: -3rem;
+	right: -8rem;
 	width: 9.4rem;
 }
 .section-plan__bgIcon--04{
-	bottom: -10rem;
-	right: 2rem;
+	bottom: -12.8rem;
+	right: -0.6rem;
 	width: 6.4rem;
 }
 .section-plan__button {
