@@ -821,7 +821,7 @@ textarea{
 	overflow: hidden;
 }
 .nav-global > li {
-	padding: 0 2.5rem;
+	padding: 0 1.5rem;
 }
 .nav-global > li > a {
 	position: relative;
@@ -878,7 +878,20 @@ textarea{
 .nav-link{
 	display: none;
 }
-
+@media (min-width: 769px) and (max-width:959px){
+	.nav-global > li{
+		padding: 0 8px;
+	}
+	.nav-button{
+		margin-left: 10px;
+	}
+	.nav-button a{
+		padding: 8px 20px 8px 10px;
+	}
+	.nav-button a::after{
+		right: 7px;
+	}
+}
 @media only screen and (max-width:768px){
 	.is-opened-menu {
 		overflow: hidden;
@@ -995,10 +1008,13 @@ textarea{
 .nav-contentinfo ul li a{
 	position: relative;
 	font-size: 1.4rem;
-	padding: 16px 34px 16px 0;
+	padding: 16px 50px 16px 0;
 	display: block;
 	color: #9EC7D1;
-	border-bottom: 2px #9EC7D1 dotted;
+	background-image: linear-gradient(to right, rgba(158,199,209,1) 0%, rgba(255,255,255,0) 30%);
+	background-position: bottom;
+	background-size: 9px 2px;
+	background-repeat: repeat-x;
 }
 .nav-contentinfo ul li a::after{
 	content: '';
@@ -1008,7 +1024,7 @@ textarea{
 	height: 14px;
 	position: absolute;
 	top: 50%;
-	right: 20px;
+	right: 30px;
 	transform: translateY(-50%);
 
 }
@@ -1063,7 +1079,7 @@ textarea{
 	width: 100%;
 }
 #l-header #sitelogo{
-	width: 25rem;
+	width: 11rem;
 }
 @media only screen and (max-width:768px){
 	#l-header #sitelogo{
@@ -1072,12 +1088,12 @@ textarea{
 }
 @media only screen and (max-width:599px){
 	#l-header #sitelogo{
-		width: 12rem;
+		width: 8.8rem;
 	}
 }/* endMedia */
 .l-header__wrapper{
-	padding: 2rem 0;
-	margin: 0 4vw;
+	padding: 14px 0;
+	margin: 0 4rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -1087,6 +1103,7 @@ textarea{
 		display: block;
 		margin: 0;
 		text-align: center;
+		padding: 17px 0;
 	}
 }
 
@@ -1114,8 +1131,10 @@ textarea{
 	background: #fff;
 }
 .l-footer__wrapper{
-	padding: 2.4rem 0;
-	margin: 0 4vw;
+	padding: 24px 20px;
+	margin: 0 auto;
+	max-width: 1170px;
+	box-sizing: border-box;
 }
 .l-footer__title{
 	font-size: 1.6rem;
@@ -1123,7 +1142,7 @@ textarea{
 	line-height: 1.3;
 	color: #9EC7D1;
 	text-align: center;
-	padding-top: 6.2rem;
+	padding-top: 58px;
 }
 
 .lst-social{
@@ -1140,14 +1159,13 @@ textarea{
 
 @media only screen and (max-width:768px){
 	.l-footer__wrapper{
-		margin: 0 auto;
-		padding: 2.4rem 4rem;
+		padding: 24px 40px 10px;
 	}
 	.l-footer__title{
-		padding-top: 4.2rem;
+		padding-top: 18px;
 	}
 	.nav-contentinfo{
-		padding-top: 42px;
+		padding-top: 25px;
 	}
 	.nav-contentinfo ul{
 		display: block;
@@ -1155,12 +1173,16 @@ textarea{
 	.nav-contentinfo ul li{
 		width: 100%;
 		margin-bottom: 9px;
+		padding: 0;
 	}
 	.nav-contentinfo ul li a{
 		padding: 16px 74px 16px 0;
 	}
 	.nav-contentinfo ul li a::after{
-		right: 60px;
+		right: 80px;
+	}
+	.lst-social{
+		margin: 79px 0 33px;
 	}
 }
 
