@@ -1884,12 +1884,15 @@ textarea{
 	background: #B7E3E5;
 	padding-top: 100px;
 }
+.lst-product__item{
+	margin-bottom: 183px;
+}
 .box-product{
 	position: relative;
 	background: #fff;
 	border-radius: 40px;
 	left: 15%;
-	padding: 0 56px;
+	padding: 0 56px 56px;
 	box-sizing: border-box;
 }
 .box-product__num{
@@ -1967,6 +1970,9 @@ textarea{
 	display: inline-block;
 	margin-right: 10px;
 }
+
+
+/*<table></table>*/
 /* -----------------------------------------------
 *> [4. Print Style]
 -------------------------------------------------- */
