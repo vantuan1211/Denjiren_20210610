@@ -1887,10 +1887,16 @@ textarea{
 }
 .box-product__subtitle{
 	padding-left: 20px;
+	color: #9EC7D1;
+	font-weight: bold;
+}
+.box-data{
+	margin-bottom: 60px;
 }
 .box-data--01{
 	margin-top: 65px;
 	padding-left: 190px;
+	margin-bottom: 170px;
 }
 .box-product__title{
 	font-size: 16px;
@@ -1899,12 +1905,38 @@ textarea{
 	line-height: 1.5;
 	color: #343434;
 }
+.box-data__title{
+	font-size: 16px;
+	font-weight: bold;
+	color: #343434;
+	line-height: 1.5;
+}
 .box-data__text{
 	font-size: 16px;
-	margin-top: 17px;
+	margin-top: 5px;
 	line-height: 2;
 	letter-spacing: 0.01em;
 	color: #343434;
+}
+.lst-note{
+	margin-top: 10px;
+}
+.lst-note li{
+	position: relative;
+	line-height: 2;
+	font-size: 16px;
+}
+.lst-note li:before{
+	content: "";
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #9EC7D1;
+	position: relative;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	margin-right: 10px;
 }
 /* -----------------------------------------------
 *> [4. Print Style]
