@@ -92,6 +92,7 @@ var Common = (function () {
 		_this.globalNavButton();
 		_this.initGlobalNav();
 		_this.smoothScroll();
+		_this.effortsSlide();
 	}
 
 	/**
@@ -296,6 +297,28 @@ var Common = (function () {
 				$('.js-matchheight').matchHeight();
 				$('.js-matchheight02').matchHeight();
 			}, 500);
+		});
+	}
+
+	/**
+	* efforts slider
+	*/
+	Common.prototype.effortsSlide = function(){
+		$('.js-slickText').slick({
+			infinite: false,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: true,
+			asNavFor: '.js-slickImage',
+			prevArrow:"<p class='slick-prev'><span>PREV</span></p>",
+			nextArrow:"<p class='slick-next'><span>NEXT</span></p>"
+		});
+		$('.js-slickImage').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			asNavFor: '.js-slickText',
+			fade: true,
+			arrows: false,
 		});
 	}
 
