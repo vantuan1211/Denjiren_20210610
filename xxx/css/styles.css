@@ -1963,6 +1963,33 @@ textarea{
 	padding-bottom: 24rem;
 	z-index: 2;
 }
+.section-roadmap__circleBottom{
+	position: absolute;
+	width: 100vw;
+	height: 50vw;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	background: #B7E3E5;
+}
+.section-roadmap__circleBottom::before{
+	content: "";
+	background: #F5F9FA;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	display: block;
+	width: 195vw;
+	height: 195vw;
+	z-index: 1;
+	border-radius: 50%;
+}
+.section-roadmap .wrp-container{
+	position: relative;
+	z-index: 1;
+}
 .box-roadmap__image {
 	max-width: 94.4rem;
 	margin: 0 auto;
