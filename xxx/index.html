@@ -18,17 +18,16 @@
 <link href="/assets/images/apple-touch-icon.png" rel="apple-touch-icon">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="./css/slick.min.css" rel="stylesheet" media="all">
 <link href="./css/styles.css" rel="stylesheet" media="all">
 </head>
 <body>
 <div id="l-document">
 <header id="l-header" class="l-header">
 	<div class="l-header__wrapper">
-		<p id="sitelogo"><a href="/" target="_blank"><img src="./img/logo.png" alt=""></a></p>
+		<p id="sitelogo"><a href="/" target="_blank"><img src="./img/logo.png" alt="" class="fluid-image"></a></p>
 		<a class="nav-global-menu">
-			<span class="b1" aria-hidden="true"></span>
-			<span class="b2" aria-hidden="true"></span>
-			<span class="b3" aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
 		</a>
 		<nav class="nav-global-wrap">
 			<ul class="nav-global">
@@ -124,7 +123,7 @@
 
 		<!--▼取り組みの方向性▼▼▼▼▼▼▼-->
 		<div class="section-efforts">
-			<div class="wrp-container">
+			<div class="section-efforts__container">
 				<div class="box-scrollDown">
 					<div class="box-scrollDown__circle"><img src="./img/img-circle.png" alt="" class="fluid-image"></div>
 				</div>
@@ -137,7 +136,7 @@
 									<span class="box-efforts__number"><img src="./img/no-txt01.svg" alt="" class="fluid-image"></span>
 									<p class="box-efforts__title">確率した脱炭素電源の最大限活用</p>
 									<p class="box-efforts__description">供給側における「電源の脱炭素化」</p>
-									<p class="box-efforts__detail">供給側における「電源の脱炭素化」に向けては、エネルギー資源や再生可能エネルギー(以下、「再エネ」)の適地等に乏しい我が国の国情やレジリエンスの観点等を踏まえて、特定の電源に過度に依存することなくバランスのとれた電源構成を追求することが重要です。</p>
+									<p class="box-efforts__detail">供給側における「電源の脱炭素化」に向けては、エネルギー資源や再生可能エネルギー(以下、「再エネ」)の適地等に乏しい我が国の国情やレジリエンスの観点等を踏まえて、特定の電源に過度に依存することなくバランスのとれた電源構成を追求することが重要です。<br>供給側における「電源の脱炭素化」に向けては、エネルギー資源や再生可能エネルギー(以下、「再エネ」)の適地等に乏しい我が国の国情やレジリエンスの観点等を踏まえて、特定の電源に過度に依存することなくバランスのとれた電源構成を追求することが重要です。</p>
 								</div>
 							</div>
 							<div class="box-efforts__item">
@@ -170,19 +169,19 @@
 						<div class="box-efforts__image-img js-slickImage">
 							<figure>
 								<img src="./img/img-index-efforts01.png" alt="" class="fluid-image">
-								<figcaption>カーボンニュートラルの全体図 01</figcaption>
+								<figcaption>カーボンニュートラルの全体図</figcaption>
 							</figure>
 							<figure>
 								<img src="./img/img-index-efforts02.png" alt="" class="fluid-image">
-								<figcaption>カーボンニュートラルの全体図 02</figcaption>
+								<figcaption>カーボンニュートラルの全体図</figcaption>
 							</figure>
 							<figure>
 								<img src="./img/img-index-efforts03.png" alt="" class="fluid-image">
-								<figcaption>カーボンニュートラルの全体図 03</figcaption>
+								<figcaption>カーボンニュートラルの全体図</figcaption>
 							</figure>
 							<figure>
 								<img src="./img/img-index-efforts04.png" alt="" class="fluid-image">
-								<figcaption>カーボンニュートラルの全体図 04</figcaption>
+								<figcaption>カーボンニュートラルの全体図</figcaption>
 							</figure>
 						</div>
 					</div>
@@ -255,6 +254,7 @@
 </div><!-- /#document -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="./js/jquery.min.js"><\/script>');</script>
+<script src="./js/slick.min.js" defer></script>
 <script src="./js/scripts.js" defer></script>
 </body>
 </html>
