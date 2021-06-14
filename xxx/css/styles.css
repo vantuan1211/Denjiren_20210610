@@ -2079,6 +2079,9 @@ textarea{
 	}
 }
 
+.wrp-section-plan{
+	padding-top: 76px;
+}
 .section-plan{
 	background: #B7E3E5;
 	position: relative;
@@ -2151,6 +2154,9 @@ textarea{
 		bottom: -14.3rem;
 	}
 
+	.wrp-section-plan{
+		padding-top: 0;
+	}
 	.wrp-section-plan .section-plan .hdg-lv2{
 		padding-top: 10rem;
 	}
@@ -2181,7 +2187,7 @@ textarea{
 /*detail.html */
 .sec-product{
 	background: #B7E3E5;
-	padding-top: 100px;
+	padding-top: 109px;
 	padding-bottom: 155px;
 }
 .lst-product__item{
@@ -2201,7 +2207,7 @@ textarea{
 .box-product__num{
 	position: absolute;
 	left: -192px;
-	top: 0;
+	top: 20px;
 }
 .box-product__num img{
 	height: 88px;
@@ -2210,14 +2216,14 @@ textarea{
 .box-product__image{
 	position: absolute;
 	left: -192px;
-	top: 142px;
+	top: 164px;
 }
 .box-product__image img{
 	border-radius: 40px;
 }
 .box-product__title{
 	display: flex;
-	padding: 58px 56px 0;
+	padding: 58px 0 0;
 	box-sizing: border-box;
 	align-items: center;
 }
@@ -2252,7 +2258,7 @@ textarea{
 }
 .box-data--01{
 	margin-top: 65px;
-	padding-left: 190px;
+	padding-left: 135px;
 	margin-bottom: 170px;
 }
 .box-product__title{
