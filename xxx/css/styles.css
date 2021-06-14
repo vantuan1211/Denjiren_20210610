@@ -640,6 +640,7 @@ textarea{
 /*>>> 2-4-2.  Headings [hdg-lv*] */
 .hdg-lv2{
 	font-size: 3.2rem;
+	letter-spacing: 0.1em;
 	padding: 12rem 0 8rem;
 	color: #9EC7D1;
 	position: relative;
@@ -1202,7 +1203,7 @@ textarea{
 	}
 	.nav-contentinfo ul li{
 		width: 100%;
-		margin-bottom: 9px;
+		margin-bottom: 6px;
 		padding: 0;
 	}
 	.nav-contentinfo ul li a{
@@ -1287,18 +1288,26 @@ textarea{
 .box-main-visual__deco02{
 	position: absolute;
 	display: inline-block;
-	width: 83px;
-	height: 79px;
-	bottom: 100px;
-	left: 245px;
+	width: 64px;
+	height: 61px;
+	bottom: 120px;
+	left: 255px;
 }
 .box-main-visual__deco03{
 	position: absolute;
 	display: inline-block;
-	width: 137px;
-	height: 188px;
-	bottom: -24px;
+	width: 94px;
+	height: 90px;
+	bottom: 75px;
 	right: 102px;
+}
+.box-main-visual__deco04{
+	position: absolute;
+	display: inline-block;
+	width: 64px;
+	height: 61px;
+	bottom: -25px;
+	right: 175px;
 }
 .box-main-visual__text{
 	text-align: left;
@@ -1310,19 +1319,21 @@ textarea{
 	position: absolute;
 	top: 500px;
 	left: 50%;
-	padding-left: 250px;
+	padding-left: 252px;
 }
 .box-main-visual__scroll{
 	display: inline-block;
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	bottom: 12px;
+	bottom: 11px;
 	font-size: 12px;
 	font-weight: bold;
-	color: #fff;
 	line-height: 1;
-	padding-bottom: 12px;
+	padding-bottom: 14px;
+}
+.box-main-visual__scroll a{
+	color: #fff;
 }
 .box-main-visual__scroll::before{
 	content: "";
@@ -1355,12 +1366,17 @@ textarea{
 		left: -16px;
 	}
 	.box-main-visual__deco02{
-		right: -16px;
-		bottom: 142px;
+		right: -7px;
+		bottom: 160px;
 		left: auto;
 	}
 	.box-main-visual__deco03{
 		display: none;
+	}
+	.box-main-visual__deco04{
+		right: auto;
+		left: 36px;
+		bottom: -16px
 	}
 	.box-main-visual__text{
 		top: auto;
@@ -1369,6 +1385,9 @@ textarea{
 		right: 0;
 		padding-left: 0;
 		text-align: center;
+	}
+	.box-main-visual__scroll{
+		bottom: 24px
 	}
 }
 .box-declaration{
@@ -1390,7 +1409,7 @@ textarea{
 }
 .box-declaration__inner{
 	background: #fff;
-	padding-bottom: 335px;
+	padding-bottom: 270px;
 }
 .box-declaration__content{
 	display: block;
@@ -1415,14 +1434,14 @@ textarea{
 }
 .box-message{
 	position: relative;
-	margin-top: 95px;
+	margin-top: 120px;
 }
 .box-message__inner{
 	position: relative;
 	z-index: 2;
 	background: #F7F7F7;
 	border-radius: 40px;
-	padding: 55px 96px 50px;
+	padding: 58px 96px 50px;
 	box-sizing: border-box;
 }
 .box-message__title{
@@ -1441,7 +1460,7 @@ textarea{
 .box-message__text span{
 	display: block;
 	font-size: 10px;
-	margin-top: 5px;
+	margin-top: 3px;
 }
 .box-message__circle{
 	display: inline-block;
@@ -1453,6 +1472,9 @@ textarea{
 	left: -64px;
 }
 @media screen and (max-width: 767px){
+	.box-declaration__inner{
+		padding-bottom: 200px;
+	}
 	.box-declaration__content .hdg-lv2{
 		padding-bottom: 108px;
 	}
@@ -1479,7 +1501,7 @@ textarea{
 .sec-about{
 	position: relative;
 	z-index: 3;
-	padding: 175px 0 430px;
+	padding: 240px 0 350px;
 	background: #fff;
 }
 .sec-about__inner{
@@ -1506,7 +1528,7 @@ textarea{
 }
 .sec-about .hdg-lv2{
 	position: absolute;
-	top: -115px;
+	top: -195px;
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 2;
@@ -1517,7 +1539,7 @@ textarea{
 	position: absolute;
 	width: 100vw;
 	height: 50vw;
-	top: -184px;
+	top: -118px;
 	left: 0;
 	right: 0;
 	overflow: hidden;
@@ -1539,7 +1561,7 @@ textarea{
 	position: absolute;
 	width: 100vw;
 	height: 50vw;
-	bottom: 165px;
+	bottom: 85px;
 	left: 0;
 	right: 0;
 	overflow: hidden;
@@ -1625,14 +1647,14 @@ textarea{
 .lst-about__item:nth-child(4) .box-about__text{
 	position: relative;
 	width: 35%;
-	padding-top: 93px;
+	padding-top: 100px;
 	line-height: 2;
 }
 .lst-about__item:nth-child(4) .box-about__image{
 	padding-top: 94px;
 	width: 65%;
 }
-@media screen and (max-width: 1200px){
+/*@media screen and (max-width: 1200px){
 	.sec-about__inner{
 		padding: 0 20px;
 	}
@@ -1657,16 +1679,17 @@ textarea{
 	.lst-about__item:nth-child(4) .box-about__text{
 		margin-right: 35px;
 	}
-}
+}*/
 @media screen and (max-width: 767px){
 	.sec-about{
-		padding-top: 110px;
-		padding-bottom: 188px;
+		padding-top: 245px;
+		padding-bottom: 108px;
 	}
 	.sec-about .hdg-lv2{
 		transform: none;
 		left: 0;
 		right: 0;
+		top: -115px;
 		text-align: center;
 	}
 	.sec-about__inner{
@@ -1704,13 +1727,13 @@ textarea{
 		margin-top: 40px;
 	}
 	.sec-about__inner:before{
-		top: -386px;
+		top: -385px;
 		right: 16%;
 		width: 114px;
 		height: 134px;
 	}
 	.sec-about__circle__top{
-		top: -215px;
+		top: -80px;
 		height: 200vw;
 	}
 	.sec-about__circle__top::before{
@@ -1720,7 +1743,7 @@ textarea{
 		left: -32%;
 	}
 	.sec-about__circle__bottom{
-		bottom: 152px;
+		bottom: 72px;
 		height: 200vw;
 	}
 	.sec-about__circle__bottom::before{
@@ -1738,6 +1761,7 @@ textarea{
 	position: relative;
 	z-index: 2;
 	background: #fff;
+	padding-top: 80px;
 	padding-bottom: 12rem;
 }
 .section-efforts__container{
@@ -1832,9 +1856,9 @@ textarea{
 	}
 }
 @media only screen and (max-width: 768px){
-	.sec-about{
+	/*.sec-about{
 		overflow: hidden;
-	}
+	}*/
 	.section-efforts{
 		padding-bottom: 11rem;
 	}
@@ -1962,7 +1986,7 @@ textarea{
 
 .box-scrollDown{
 	position: absolute;
-	bottom: 85px;
+	bottom: 5px;
 	right: 242px;
 }
 .box-scrollDown__circle{
@@ -1973,7 +1997,7 @@ textarea{
 @media only screen and (max-width: 768px){
 	.box-scrollDown{
 		top: auto;
-		bottom: 6rem;
+		bottom: -2rem;
 		right: 4.5rem;
 	}
 }
