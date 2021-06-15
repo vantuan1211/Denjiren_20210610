@@ -1450,6 +1450,16 @@ textarea{
 		bottom: 24px
 	}
 }
+/* Landscape */
+@media screen and (max-width: 844px) and (max-height: 500px) and (orientation: landscape) {
+	.sec-main{
+		padding-top: 0;
+	}
+	.box-main-visual{
+		position: relative;
+		min-height: 844px;
+	}
+}
 .box-declaration{
 	position: relative;
 	z-index: 2;
@@ -2759,6 +2769,9 @@ textarea{
 	}
 	.sec-bottom .hdg-lv2{
 		top: -94px;
+		left: 0;
+		right: 0;
+		transform: none;
 	}
 	.lst-link{
 		display: block;

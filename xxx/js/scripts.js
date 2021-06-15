@@ -87,7 +87,6 @@ var Common = (function () {
 	*/
 	Common.prototype.onInit = function () {
 		var _this = this;
-		
 		_this.addAgentClass();
 		_this.globalNavButton();
 		_this.initGlobalNav();
