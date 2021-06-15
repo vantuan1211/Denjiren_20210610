@@ -2381,7 +2381,7 @@ textarea{
 	display: inline-block;
 	margin-right: 6px;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
 	.lst-dot li + li{
 		margin-top: 4px;
 	}
@@ -2465,7 +2465,7 @@ textarea{
 	position: absolute;
 	left: 0;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
 	.sec-product{
 		padding-top: 160px;
 		padding-bottom: 160px;
@@ -2574,7 +2574,7 @@ textarea{
 .tbl-primary--01 .col-03{
 	width: 65%;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
 	.tbl-primary{
 		display: block;
 		max-width: 100%;
@@ -2620,7 +2620,7 @@ textarea{
 .sec-bottom__inner{
 	position: relative;
 	background: #9EC7D1;
-	padding-bottom: 120px;
+	padding-bottom: 160px;
 	z-index: 2;
 }
 .sec-bottom__content{
@@ -2650,6 +2650,8 @@ textarea{
 	padding-bottom: 0;
 }
 .lst-link{
+	position: relative;
+	top: -16px;
 	display: flex;
 	flex-wrap: wrap;
 	margin: -117px -8px 0 -8px;
@@ -2681,7 +2683,7 @@ textarea{
 	left: 0;
 	transform: translateY(-50%);
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
 	.sec-bottom{
 		padding-top: 260px;
 	}
