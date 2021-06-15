@@ -703,7 +703,7 @@ textarea{
 
 /*>>> 2-4-4.  Button   [btn-***]*/
 .btn{
-	background-color: #7BBDD1;
+	background-color: #B7E3E5;
 	border-radius: 4rem;
 	border: solid 0.1rem #fff;
 	box-sizing: border-box;
@@ -1257,6 +1257,14 @@ textarea{
 		margin-bottom: 0;
 	}
 }
+@media only screen and (max-width:374px){
+	.nav-contentinfo ul li a{
+		padding: 16px 40px 16px 8px;
+	}
+	.nav-contentinfo ul li a::after{
+		right: 20px;
+	}
+}
 
 /*>> 3-4. OverLayerConfig [z-index]
 -------------------------------------------------- */
@@ -1411,7 +1419,7 @@ textarea{
 	.box-main-visual__image{
 		top: 136px;
 		width: 100%;
-		max-width: 100%;
+		max-width: 390px;
 	}
 	.box-main-visual__deco01{
 		top: 41px;
@@ -2724,6 +2732,11 @@ textarea{
 	top: 50%;
 	left: 0;
 	transform: translateY(-50%);
+}
+@media only screen and (min-width: 1600px){
+	.sec-bottom__circle__top:before{
+		width: 210vw;
+	}
 }
 @media only screen and (max-width: 767px){
 	.sec-bottom{

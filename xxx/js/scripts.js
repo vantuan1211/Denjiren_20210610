@@ -152,6 +152,12 @@ var Common = (function () {
 				globalNav.addClass('is-active');
 				$('html').addClass('is-opened-menu');
 			}
+		});
+		$('.nav-global__item a').on('click', function(e){
+			menuBtn.removeClass('is-active');
+			header.removeClass('is-hover');
+			globalNav.removeClass('is-active');
+			$('html').removeClass('is-opened-menu');
 		});		
 	}
 
