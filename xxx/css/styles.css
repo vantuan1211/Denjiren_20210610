@@ -1426,7 +1426,7 @@ textarea{
 		left: -1.6rem;
 	}
 	.box-main-visual__deco02{
-		right: -.7rem;
+		right: -0.7rem;
 		bottom: 16rem;
 		left: auto;
 	}
@@ -2273,7 +2273,7 @@ textarea{
 	}
 	.wrp-section-plan .section-plan__bgIcon--04{
 		bottom: 20.2rem;
-		right: -.7rem;
+		right: -0.7rem;
 	}
 }
 
@@ -2450,7 +2450,7 @@ textarea{
 /*box-accodion*/
 .box-accodion__head{
 	background: #F7F7F7;
-	padding: 2.6rem 7rem 22rem 2rem;
+	padding: 2.6rem 7rem 2.6rem 2rem;
 	box-sizing: border-box;
 	border-radius: 1.6rem;
 	position: relative;
@@ -2577,7 +2577,7 @@ textarea{
 	}
 	.box-accodion__head{
 		line-height: 2;
-		padding: 1.1rem 52rem 1.3rem 2rem;
+		padding: 1.1rem 5rem 1.3rem 2rem;
 	}
 }
 
@@ -2714,7 +2714,7 @@ textarea{
 	top: -1.6rem;
 	display: flex;
 	flex-wrap: wrap;
-	margin: -11.7rem -0.8rem 0 -.8rem;
+	margin: -11.7rem -0.8rem 0 -0.8rem;
 }
 .lst-link li{
 	width: calc(25% - 1.6rem);
