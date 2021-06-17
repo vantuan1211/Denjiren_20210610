@@ -176,8 +176,18 @@ var Common = (function () {
 				}else{
 					$('#sitelogo').removeClass('is-hide');
 				}
+				if($('#declaration').length){
+					$('#l-header').removeClass('is-bg-white');
+				}
 			}else{
 				$('#sitelogo').removeClass('is-hide');
+				if($('#declaration').length){
+					if(scrollTop >= $('#declaration').offset().top){
+						$('#l-header').addClass('is-bg-white');
+					}else{
+						$('#l-header').removeClass('is-bg-white');
+					}
+				}
 			}
 		});
 		if(isPC){
