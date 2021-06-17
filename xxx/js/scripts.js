@@ -168,6 +168,18 @@ var Common = (function () {
 		var globalNavItem = $(".nav-global > li");
 		var globalNavSub = $(".nav-global__sub > li");
 		var header = $("#l-header");
+		$(window).on('scroll', function(){
+			var scrollTop = $(window).scrollTop();
+			if($(window).width() < 768){
+				if(scrollTop > 40){
+					$('#sitelogo').addClass('is-hide');
+				}else{
+					$('#sitelogo').removeClass('is-hide');
+				}
+			}else{
+				$('#sitelogo').removeClass('is-hide');
+			}
+		});
 		if(isPC){
 			globalNavItem.each(function(i, elem){
 				var timer = false;
@@ -209,7 +221,7 @@ var Common = (function () {
 				var subNavWrap = subNav.find(".nav-global__sub__child");
 				var globalNav = item.closest('.nav-parent');
 				item.on('click', function(e){
-					if(window.innerWidth <= 768){
+					if(window.innerWidth < 768){
 						e.preventDefault();
 						if(!subNav.hasClass('is-active')){
 							subTitle.each(function(i, elem){
@@ -234,7 +246,7 @@ var Common = (function () {
 				var navParent = elem.find(".nav-parent-wrap");
 				if(navParent){
 					anchor.on('click', function(e){
-						if(window.innerWidth > 768){
+						if(window.innerWidth >= 768){
 							if(elem.hasClass('is-hover')){
 								//elem.removeClass('is-hover');
 								//header.removeClass('is-hover');
