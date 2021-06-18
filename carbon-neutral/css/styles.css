@@ -1943,6 +1943,10 @@ textarea{
 	color: #343434;
 	margin-top: 3.3rem;
 }
+.box-efforts__content .lst-dot li{
+	font-size: 1.2rem;
+	line-height: 2;
+}
 .box-efforts__detail{
 	font-size: 1.2rem;
 	line-height: 2;
