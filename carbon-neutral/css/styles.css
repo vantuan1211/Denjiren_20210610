@@ -1012,6 +1012,10 @@ textarea{
 		right: -2.8rem;
 		transform: translateY(-50%);
 	}
+	.nav-button a::after{
+		content: "";
+		background: url('../img/icon-triangle-sp.svg') center center no-repeat;
+	}
 }
 @media screen and (max-width: 767px) and (max-height: 735px) and (orientation: portrait) {
 	.nav-global{
@@ -1023,8 +1027,7 @@ textarea{
 	.nav-link{
 		margin-top: 22vh;
 	}
-}
-/* endMedia */
+}/* endMedia */
 
 /*Footer navi*/
 .nav-contentinfo {

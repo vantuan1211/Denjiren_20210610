@@ -1,3 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="7.5" height="9" viewBox="0 0 7.5 9">
-  <path id="Polygon_9" data-name="Polygon 9" d="M3.643,1.429a1,1,0,0,1,1.715,0L8.091,5.986A1,1,0,0,1,7.234,7.5H1.766A1,1,0,0,1,.909,5.986Z" transform="translate(7.5) rotate(90)" fill="#343434"/>
+<svg id="icon-triangle.svg" xmlns="http://www.w3.org/2000/svg" width="52.5" height="60.03" viewBox="0 0 52.5 60.03">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7bbdd1;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="三角形_2" data-name="三角形 2" class="cls-1" d="M357,4226.42a3,3,0,0,1,0,5.19l-46.5,27.01a3,3,0,0,1-4.507-2.6V4202a3,3,0,0,1,4.507-2.59Z" transform="translate(-306 -4199)"/>
 </svg>
