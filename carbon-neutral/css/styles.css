@@ -1003,7 +1003,7 @@ textarea{
 	}
 	.nav-link a::after{
 		content: '';
-		background: url('/xxx/img/icon-external-link.svg') center center no-repeat;
+		background: url('../img/icon-external-link.svg') center center no-repeat;
 		background-size: cover;
 		width: 1.2rem;
 		height: 1.2rem;
@@ -1043,7 +1043,7 @@ textarea{
 }
 .nav-contentinfo ul li a::after{
 	content: '';
-	background: url('/xxx/img/icon-external-link.svg') center center no-repeat;
+	background: url('../img/icon-external-link.svg') center center no-repeat;
 	background-size: cover;
 	width: 1.4rem;
 	height: 1.4rem;
@@ -1218,7 +1218,7 @@ textarea{
 }
 .btn-footer a:after{
 	content: '';
-	background: url(/xxx/img/icon-triangle.svg) center center no-repeat;
+	background: url(../img/icon-triangle.svg) center center no-repeat;
 	background-size: cover;
 	width: .9rem;
 	height: .8rem;
@@ -1903,13 +1903,31 @@ textarea{
 	box-sizing: border-box;
 }
 .box-efforts__text{
+	position: relative;
 	width: 34%;
 	float: left;
 	box-sizing: border-box;
 }
-.box-efforts__item{
+.box-efforts__text::before{
+	content: '';
+	display: inline-block;
+	width: calc(100% - 1.6rem);
+	height: calc(100% - 2.8rem);
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 0.8rem;
+	right: 0.8rem;
 	background: #F7F7F7;
 	border-radius: 4rem;
+}
+.box-efforts__image-slider{
+	position: relative;
+	z-index: 3;
+}
+.box-efforts__item{
+	/*background: #F7F7F7;
+	border-radius: 4rem;*/
 	padding: 4rem 1rem 12.5rem 4rem;
 	position: relative;
 }
@@ -1952,6 +1970,8 @@ textarea{
 	margin-top: 1rem;
 }
 .box-efforts__image{
+	position: relative;
+	z-index: 4;
 	width: 66%;
 	float: right;
 }
@@ -2013,6 +2033,19 @@ textarea{
 	}
 	.box-efforts__image-img figcaption{
 		margin-top: 2.5rem;
+	}
+	.box-efforts__text::before{
+		content: '';
+		display: inline-block;
+		width: calc(100% - 4rem);
+		height: calc(100% - 6.8rem);
+		position: absolute;
+		z-index: 2;
+		bottom: 0;
+		left: 2rem;
+		right: 2rem;
+		background: #F7F7F7;
+		border-radius: 4rem;
 	}
 }
 
@@ -2746,7 +2779,7 @@ textarea{
 }
 .lst-link li a:before{
 	content: '';
-	background: url(/xxx/img/icon-next-on.svg) center center no-repeat;
+	background: url(../img/icon-next-on.svg) center center no-repeat;
 	background-size: cover;
 	width: .9rem;
 	height: .8rem;
