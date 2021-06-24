@@ -1918,7 +1918,7 @@ textarea{
 }
 .box-efforts__text{
 	position: relative;
-	width: 34%;
+	width: 50%;
 	float: left;
 	box-sizing: border-box;
 }
@@ -1980,7 +1980,7 @@ textarea{
 	margin-left: 1.4rem;
 }
 .box-efforts__detail{
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	line-height: 2;
 	color: #343434;
 	margin-top: 1rem;
@@ -1988,7 +1988,7 @@ textarea{
 .box-efforts__image{
 	position: relative;
 	z-index: 4;
-	width: 66%;
+	width: 50%;
 	float: right;
 }
 .box-efforts__image-img{
@@ -2158,7 +2158,14 @@ textarea{
 		width: 10rem;
 	}
 }
-
+@media only screen and (max-width: 329px){
+	.box-efforts .slick-prev{
+		left: 3rem;
+	}
+	.box-efforts .slick-next{
+		right: 3rem;
+	}
+}
 .box-scrollDown{
 	position: absolute;
 	bottom: .5rem;
