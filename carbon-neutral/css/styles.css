@@ -1926,7 +1926,7 @@ textarea{
 }
 .box-efforts__text{
 	position: relative;
-	width: 50%;
+	width: 51.5%;
 	float: left;
 	box-sizing: border-box;
 }
@@ -1966,7 +1966,7 @@ textarea{
 	left: 3.1rem;
 }
 .box-efforts__number--01{
-	width: 17.3rem;
+	width: 18.5rem;
 	top: -2.7rem;
 }
 .box-efforts__title{
@@ -1989,14 +1989,14 @@ textarea{
 }
 .box-efforts__detail{
 	font-size: 1.4rem;
-	line-height: 2;
+	line-height: 1.71;
 	color: #343434;
 	margin-top: 1rem;
 }
 .box-efforts__image{
 	position: relative;
 	z-index: 4;
-	width: 50%;
+	width: 48.5%;
 	float: right;
 }
 .box-efforts__image-img{
@@ -2114,10 +2114,10 @@ textarea{
 	position: relative;
 }
 .box-efforts .slick-prev{
-	left: 4rem;
+	left: 14rem;
 }
 .box-efforts .slick-next{
-	right: 4rem;
+	right: 15rem;
 }
 .box-efforts .slick-arrow.slick-disabled{
 	background: #EBEBEB;
@@ -2149,6 +2149,14 @@ textarea{
 	background: url("../img/icon-next-off.svg") no-repeat center center;
 	background-size: cover;
 	margin-left: 1rem;
+}
+@media only screen and (max-width: 1150px){
+	.box-efforts .slick-prev{
+		left: 4rem;
+	}
+	.box-efforts .slick-next{
+		right: 4rem;
+	}
 }
 @media only screen and (max-width: 767px){
 	.box-efforts .slick-track{
