@@ -395,9 +395,11 @@ var Common = (function () {
 		elLightbox.click(function(){
 			var imgSrc = $(this).data('src');
 			if(!$('.lightbox-content').length){
-				var _htmlLightBox = '<div class="lightbox-content"><div class="lightbox-content__inner"><img src="' + imgSrc + '" alt="" class="fluid-image"><span class="lightbox-content__close">閉じる</span></div></div>;'
+				var _htmlLightBox = '<div class="lightbox-content"><div class="lightbox-content__inner"><img src="' + imgSrc + '" alt="" class="fluid-image"><span class="lightbox-content__close">閉じる</span></div></div>';
 				$('#l-container').append(_htmlLightBox);
-				$('.lightbox-content').addClass('is-show');
+				setTimeout(function(){
+					$('.lightbox-content').addClass('is-show');
+				}, 400);
 			}else{
 				$('.lightbox-content__inner').html('<img src="' + imgSrc + '" alt="" class="fluid-image"><span class="lightbox-content__close">閉じる</span>');
 				$('.lightbox-content').addClass('is-show');
