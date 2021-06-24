@@ -2727,10 +2727,10 @@ textarea{
 	width: 10%;
 }
 .tbl-primary .col-02{
-	width: 13%;
+	width: 24%;
 }
 .tbl-primary .col-03{
-	width: 77%;
+	width: 66%;
 }
 
 .tbl-primary--01 .col-01{
@@ -2741,6 +2741,16 @@ textarea{
 }
 .tbl-primary--01 .col-03{
 	width: 65%;
+}
+
+.tbl-primary--02 .col-01{
+	width: 19%;
+}
+.tbl-primary--02 .col-02{
+	width: 19%;
+}
+.tbl-primary--02 .col-03{
+	width: 62%;
 }
 @media only screen and (max-width: 767px){
 	.tbl-wrap{

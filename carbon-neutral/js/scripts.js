@@ -402,7 +402,10 @@ var Common = (function () {
 				$('.lightbox-content__inner').html('<img src="' + imgSrc + '" alt="" class="fluid-image"><span class="lightbox-content__close">閉じる</span>');
 				$('.lightbox-content').addClass('is-show');
 			}
-			$('.lightbox-content').click(function(){
+			$('.lightbox-content').click(function(e){
+				if($(e.target).hasClass('fluid-image')){
+					return;
+				}
 				$(this).removeClass('is-show');
 			})
 		});
