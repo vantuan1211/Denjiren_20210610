@@ -94,6 +94,7 @@ var Common = (function () {
 		_this.effortsSlide();
 		_this.scrollRotate();
 		_this.accordion();
+		_this.jsLightBox();
 	}
 
 	/**
@@ -385,6 +386,25 @@ var Common = (function () {
 					$content.slideUp();
 				}
 			});
+		});
+	}
+
+	//Global menu
+	Common.prototype.jsLightBox = function () {
+		var elLightbox = $('.js-light-box');
+		elLightbox.click(function(){
+			var imgSrc = $(this).data('src');
+			if(!$('.lightbox-content').length){
+				var _htmlLightBox = '<div class="lightbox-content"><div class="lightbox-content__inner"><img src="' + imgSrc + '" alt="" class="fluid-image"><span class="lightbox-content__close">閉じる</span></div></div>;'
+				$('#l-container').append(_htmlLightBox);
+				$('.lightbox-content').addClass('is-show');
+			}else{
+				$('.lightbox-content__inner').html('<img src="' + imgSrc + '" alt="" class="fluid-image"><span class="lightbox-content__close">閉じる</span>');
+				$('.lightbox-content').addClass('is-show');
+			}
+			$('.lightbox-content').click(function(){
+				$(this).removeClass('is-show');
+			})
 		});
 	}
 

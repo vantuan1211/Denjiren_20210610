@@ -2443,6 +2443,30 @@ textarea{
 .box-data__text + .box-image{
 	margin-top: 1.6rem;
 }
+.box-image.js-light-box{
+	cursor: pointer;
+	transition: all	0.3s ease;
+}
+.box-image.js-light-box:hover{
+	opacity: 0.7;
+}
+.box-image__lightbox{
+	display: block;
+	font-size: 14px;
+	position: relative;
+	color: #CCCCCC;
+	text-align: center;
+	margin-top: 12px;
+}
+.box-image__lightbox::before{
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url("../img/icon-zoom.svg") no-repeat center;
+	background-size: 14px 14px;
+	margin-right: 10px;
+}
 .lst-dot{
 	margin-top: 1rem;
 }
@@ -2845,7 +2869,40 @@ textarea{
 	}
 }
 
-
+/* lightbox-content */
+.lightbox-content{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(183, 227, 229, 0.9);
+	z-index: 101;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+.lightbox-content.is-show{
+	opacity: 1;
+	visibility: visible;
+}
+.lightbox-content__inner{
+	text-align: center;
+	padding: 2rem;
+}
+.lightbox-content__close{
+	display: block;
+	font-size: 16px;
+	margin-top: 17px;
+	text-align: center;
+	color: #507279;
+}
 /* -----------------------------------------------
 *> [4. Print Style]
 -------------------------------------------------- */
