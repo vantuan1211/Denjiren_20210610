@@ -1608,7 +1608,7 @@ textarea{
 }
 .sec-about__inner{
 	position: relative;
-	background: #9EC7D1;
+	background: #B7E3E5;
 }
 .sec-about__content{
 	position: relative;
@@ -1648,7 +1648,7 @@ textarea{
 }
 .sec-about__circle__top::before{
 	content: "";
-	background: #9EC7D1;
+	background: #B7E3E5;
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -1670,7 +1670,7 @@ textarea{
 }
 .sec-about__circle__bottom::before{
 	content: "";
-	background: #9EC7D1;
+	background: #B7E3E5;
 	position: absolute;
 	bottom: 0;
 	left: 50%;
@@ -2937,7 +2937,6 @@ textarea{
 	visibility: visible;
 }
 .lightbox-content__inner{
-	padding: 2rem;
 	text-align: center;
 }
 .lightbox-content__inner img{
