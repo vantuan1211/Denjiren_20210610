@@ -95,6 +95,7 @@ var Common = (function () {
 		_this.scrollRotate();
 		_this.accordion();
 		_this.jsLightBox();
+		_this.jsMediaSNS();
 	}
 
 	/**
@@ -389,7 +390,7 @@ var Common = (function () {
 		});
 	}
 
-	//Global menu
+	//Light box
 	Common.prototype.jsLightBox = function () {
 		var elLightbox = $('.js-light-box');
 		elLightbox.click(function(){
@@ -411,6 +412,27 @@ var Common = (function () {
 				$(this).removeClass('is-show');
 			})
 		});
+	}
+
+	//Media SNS
+	Common.prototype.jsMediaSNS = function () {
+		/* ------------------------------------------------------------
+		 SNS
+		* ------------------------------------------------------------ */
+		var lang          = $('html').attr('lang');
+		var titleElemText = window.document.title; //jQueryで<head>要素内の情報を取得できないためこの記法
+
+		var txtOriginal   = titleElemText.replace(/\s/g,'');
+		var txt           = encodeURI(txtOriginal);
+		var url           = location.href;
+
+		var hashTags = ""; //Twitterで使用
+
+		// facebook
+		$('.media-sns__facebook').append('<a href="//www.facebook.com/sharer/sharer.php?u=' + url + '" target="_blank" class="brightover"><img src="./img/icon-facebook.svg" alt="Facebook"></a>');
+		// twitter
+		$('.media-sns__twitter').append('<a href="//twitter.com/intent/tweet?url=' + url + '&amp;text=[' + txt + ']&amp;hashtags=' + hashTags + '" target="_blank" class="brightover"><img src="./img/icon-twitter.svg" alt="Twitter"></a>');
+
 	}
 
 	return Common;
