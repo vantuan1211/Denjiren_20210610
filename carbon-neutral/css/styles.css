@@ -1555,7 +1555,7 @@ textarea{
 	z-index: 2;
 	background: #F7F7F7;
 	border-radius: 4rem;
-	padding: 5.8rem 9.6rem 5rem;
+	padding: 5.8rem 9.5rem 5rem;
 	box-sizing: border-box;
 }
 .box-message__title{
@@ -1566,8 +1566,8 @@ textarea{
 	margin-bottom: 1rem;
 }
 .box-message__text{
-	font-size: 1.2rem;
-	line-height: 2.667;
+	font-size: 1.4rem;
+	line-height: 2.6;
 	color: #343434;
 	letter-spacing: 0.1em;
 }
