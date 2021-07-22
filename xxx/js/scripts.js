@@ -91,6 +91,7 @@ var Common = (function () {
 		_this.initGlobalNav();
 		_this.smoothScroll();
 		_this.jsMediaSNS();
+		_this.jsLightBox();
 	}
 
 	/**
@@ -121,7 +122,7 @@ var Common = (function () {
 	* smoothScroll
 	*/
 	Common.prototype.smoothScroll = function(){
-		$('body').on('click', 'a[href^="#"]:not([href="#top"])',function(){
+		$('body').on('click', 'a[href^="#"]:not(".js-modal-popup")',function(){
 			var href= $(this).attr('href');
 			var target = $(href === '#' || href === '' ? 'html' : href);
 			var position = target.offset().top - 80;
@@ -134,6 +135,17 @@ var Common = (function () {
 	* グローバリゼーション
 	*/
 	Common.prototype.initGlobalNav = function () {
+		$(window).on('scroll', function(){
+			if($(window).width() < 768){
+				var scrollTop = $(window).scrollTop(),
+					footerTop = $('#l-footer').offset().top;
+				if(scrollTop >= footerTop - $(window).height()){
+					$('.nav-global-wrap').addClass('is-hide');
+				}else{
+					$('.nav-global-wrap').removeClass('is-hide');
+				}
+			}
+		});
 	}
 
 	/**
@@ -180,6 +192,35 @@ var Common = (function () {
 		// twitter
 		$('.media-sns__twitter').append('<a href="//twitter.com/intent/tweet?url=' + url + '&amp;text=[' + txt + ']&amp;hashtags=' + hashTags + '" target="_blank" class="brightover"><img src="./img/icon-twitter.svg" alt="Twitter"></a>');
 
+	}
+
+	//Light box
+	Common.prototype.jsLightBox = function () {
+		$('.js-modal-popup').unbind('click');
+		$('.js-modal-popup').click(function(){
+			var $target = $($(this).attr('href'));
+			$('#l-document').width($('#l-document').width());
+			$target.addClass('is-open');
+			$('html').addClass('is-hidden');
+		});
+		$('.detail-box-modal__heading i').click(function(){
+			$('.detail-box-modal.is-open').removeClass('is-open');
+			$('html').removeClass('is-hidden');
+			$('#l-document').removeAttr('style');
+		});
+		$('.detail-box-modal__close').click(function(){
+			$('.detail-box-modal.is-open').removeClass('is-open');
+			$('html').removeClass('is-hidden');
+			$('#l-document').removeAttr('style');
+		});
+		$('.detail-box-modal').click(function(e){
+			if($(e.target).closest('.detail-box-modal__content').length){
+					return;
+			}
+			$('.detail-box-modal.is-open').removeClass('is-open');
+			$('html').removeClass('is-hidden');
+			$('#l-document').removeAttr('style');
+		});
 	}
 	return Common;
 }());

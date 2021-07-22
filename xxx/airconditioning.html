@@ -70,7 +70,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="detail-box-article__content">
 					<div class="detail-box-main">
 						<figure class="detail-box-main__figure">
-							<img src="./img/aircon-img-main01.png" alt="" class="fluid-image">
+							<img src="./img/aircon-img-main01.png" alt="" class="fluid-image is-visiblePc">
+							<img src="./img/aircon-img-main01-sp.png" alt="" class="fluid-image is-visibleSp">
 							<a href="#ti_aircon" class="detail-box-main__link detail-box-main__link--01"><img src="./img/aircon-img-main-link01.png" alt=""></a>
 							<a href="#ti_denkicarpet" class="detail-box-main__link detail-box-main__link--02"><img src="./img/aircon-img-main-link02.png" alt=""></a>
 							<a href="#ti_denkikotatu" class="detail-box-main__link detail-box-main__link--03"><img src="./img/aircon-img-main-link03.png" alt=""></a>
@@ -97,8 +98,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<h3 class="detail-box-media__subtitle">室外機のまわりに物を置かない</h3>
 								<p>室外機の吹出口にものを置くと、冷暖房の効果が下がります。</p>
 							</div>
-							<p class="detail-box-media__modal"><a href="" id="bt_aircon">省エネ効果を見る</a></p>
-							<p class="detail-box-media__toTop"><a href="#top">ページ上部へもどる</a></p>
+							<p class="detail-box-media__modal"><a href="#md-aircon" class="js-modal-popup" id="bt_aircon">省エネ効果を見る</a></p>
+							<p class="detail-box-media__toTop"><a href="#l-document">ページ上部へもどる</a></p>
 						</div>
 					</div>
 					<div class="detail-box-article__content__inner">
@@ -117,8 +118,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<h3 class="detail-box-media__subtitle">人のいない部分は、温めない</h3>
 								<p>電気カーペットには、分割して温める機能を備えているものもあります。人のいない部分はOFFに設定しましょう。</p>
 							</div>
-							<p class="detail-box-media__modal"><a href="" id="bt_denkicarpet">省エネ効果を見る</a></p>
-							<p class="detail-box-media__toTop"><a href="#top">ページ上部へもどる</a></p>
+							<p class="detail-box-media__modal"><a href="#md-denkicarpet" class="js-modal-popup" id="bt_denkicarpet">省エネ効果を見る</a></p>
+							<p class="detail-box-media__toTop"><a href="#l-document">ページ上部へもどる</a></p>
 						</div>
 					</div>
 					<div class="detail-box-article__content__inner">
@@ -133,8 +134,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<h3 class="detail-box-media__subtitle">上半身にはカーディガンを</h3>
 								<p>こたつはおもに腰から下を温める暖房機器なので、上半身は寒くなりがちです。カーディガンなどを1枚多めに着込むことが温かさのポイントです。ストーブやエアコンなどの暖房機器を併用する場合は、温度設定を控えめにしましょう。</p>
 							</div>
-							<p class="detail-box-media__modal"><a href="" id="bt_denkikotatu">省エネ効果を見る</a></p>
-							<p class="detail-box-media__toTop"><a href="#top">ページ上部へもどる</a></p>
+							<p class="detail-box-media__modal"><a href="#md-denkikotatu" class="js-modal-popup" id="bt_denkikotatu">省エネ効果を見る</a></p>
+							<p class="detail-box-media__toTop"><a href="#l-document">ページ上部へもどる</a></p>
 						</div>
 					</div>
 					<div class="detail-box-article__content__inner">
@@ -149,8 +150,104 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<h3 class="detail-box-media__subtitle">床暖房の上手な使い方</h3>
 								<p>床暖房は足元から体を温めるので、室温を低く設定しても快適に過ごすことができます。室温は低めに設定しましょう。<br>床暖房は運転をストップしてもすぐに冷めることはなく、暖かさが持続します。就寝や外出の約30分前にスイッチを切るようにしましょう。タイマーを使えばスイッチの切り忘れを防ぐことができます。<br>床暖房の上には、カーペットやラグマットなどを使わない方が効果的です。床暖房のある部屋にベッドを置く場合は、ベッドの下にものを置かないようにしましょう。</p>
 							</div>
-							<p class="detail-box-media__toTop"><a href="#top">ページ上部へもどる</a></p>
+							<p class="detail-box-media__toTop"><a href="#l-document">ページ上部へもどる</a></p>
 						</div>
+					</div>
+				</div>
+			</div>
+			<div class="detail-box-modal" id="md-aircon">
+				<div class="detail-box-modal__wraper">
+					<div class="detail-box-modal__content">
+						<div class="detail-box-modal__heading">省エネ効果を見る<i class="fas fa-times"></i></div>
+						<div class="detail-box-modal__info">
+							<p class="detail-box-modal__title">夏の冷房時の室温は28℃を目安に</p>
+							<p class="detail-box-modal__desc">外気温度31℃の時、エアコン（2.2kW）の冷房設定温度を27℃から28℃にした場合<br>（使用時間：9時間／日）</p>
+							<ul class="detail-lst-info">
+								<li><span class="detail-lst-info__title"><i class="fas fa-plug"></i> 消費電力の削減量</span><span class="detail-lst-info__desc">30.24kWh</span></li>
+								<li><span class="detail-lst-info__title"><i class="fas fa-leaf"></i> CO2の削減量</span><span class="detail-lst-info__desc">14.8kg</span></li>
+							</ul>
+							<p class="detail-box-modal__sum">→約820円の節約<span>（年間）</span></p>
+						</div>
+						<div class="detail-box-modal__info">
+							<p class="detail-box-modal__title">冬の暖房時の室温は20℃を目安に</p>
+							<p class="detail-box-modal__desc">外気温度6℃の時、エアコン（2.2kW）の暖房設定温度を21℃から20℃にした場合<br>（使用時間：9時間／日）</p>
+							<ul class="detail-lst-info">
+								<li><span class="detail-lst-info__title"><i class="fas fa-plug"></i> 消費電力の削減量</span><span class="detail-lst-info__desc">53.08kWh</span></li>
+								<li><span class="detail-lst-info__title"><i class="fas fa-leaf"></i> CO2の削減量</span><span class="detail-lst-info__desc">25.9kg</span></li>
+							</ul>
+							<p class="detail-box-modal__sum">→約1,430円の節約<span>（年間）</span></p>
+						</div>
+						<div class="detail-box-modal__info">
+							<p class="detail-box-modal__title">暖房は必要なときだけつける</p>
+							<p class="detail-box-modal__desc">暖房を1日1時間短縮した場合<br>（設定温度：20℃）</p>
+							<ul class="detail-lst-info">
+								<li><span class="detail-lst-info__title"><i class="fas fa-plug"></i> 消費電力の削減量</span><span class="detail-lst-info__desc">40.73kWh</span></li>
+								<li><span class="detail-lst-info__title"><i class="fas fa-leaf"></i> CO2の削減量</span><span class="detail-lst-info__desc">19.9kg</span></li>
+							</ul>
+							<p class="detail-box-modal__sum">→約1,100円の節約<span>（年間）</span></p>
+						</div>
+						<div class="detail-box-modal__info">
+							<p class="detail-box-modal__title">フィルターを月に1回か2回清掃</p>
+							<p class="detail-box-modal__desc">フィルターが目詰りしているエアコン（2.2kW）とフィルターを清掃した場合の比較</p>
+							<ul class="detail-lst-info">
+								<li><span class="detail-lst-info__title"><i class="fas fa-plug"></i> 消費電力の削減量</span><span class="detail-lst-info__desc">31.95kWh</span></li>
+								<li><span class="detail-lst-info__title"><i class="fas fa-leaf"></i> CO2の削減量</span><span class="detail-lst-info__desc">15.6kg</span></li>
+							</ul>
+							<p class="detail-box-modal__sum">→約860円の節約<span>（年間）</span></p>
+						</div>
+						<div class="detail-box-modal__close"><i class="fas fa-times"></i> とじる</div>
+					</div>
+				</div>
+			</div>
+			<div class="detail-box-modal" id="md-denkicarpet">
+				<div class="detail-box-modal__wraper">
+					<div class="detail-box-modal__content">
+						<div class="detail-box-modal__heading">省エネ効果を見る<i class="fas fa-times"></i></div>
+						<div class="detail-box-modal__info">
+							<p class="detail-box-modal__title">広さに合った大きさを。</p>
+							<p class="detail-box-modal__desc">室温20℃の時、設定温度が「中」で1日5時間使用した場合、3畳用のカーペットと2畳用のカーペットとの比較</p>
+							<ul class="detail-lst-info">
+								<li><span class="detail-lst-info__title"><i class="fas fa-plug"></i> 消費電力の削減量</span><span class="detail-lst-info__desc">89.91kWh</span></li>
+								<li><span class="detail-lst-info__title"><i class="fas fa-leaf"></i> CO2の削減量</span><span class="detail-lst-info__desc">43.9kg</span></li>
+							</ul>
+							<p class="detail-box-modal__sum">→約2,430円の節約<span>（年間）</span></p>
+						</div>
+						<div class="detail-box-modal__info">
+							<p class="detail-box-modal__title">設定温度は低めに。</p>
+							<p class="detail-box-modal__desc">3畳用で、設定温度を「強」から「中」にした場合（1日5時間使用）</p>
+							<ul class="detail-lst-info">
+								<li><span class="detail-lst-info__title"><i class="fas fa-plug"></i> 消費電力の削減量</span><span class="detail-lst-info__desc">185.97kWh</span></li>
+								<li><span class="detail-lst-info__title"><i class="fas fa-leaf"></i> CO2の削減量</span><span class="detail-lst-info__desc">90.8kg</span></li>
+							</ul>
+							<p class="detail-box-modal__sum">→約5,020円の節約<span>（年間）</span></p>
+						</div>
+						<div class="detail-box-modal__close"><i class="fas fa-times"></i> とじる</div>
+					</div>
+				</div>
+			</div>
+			<div class="detail-box-modal" id="md-denkikotatu">
+				<div class="detail-box-modal__wraper">
+					<div class="detail-box-modal__content">
+						<div class="detail-box-modal__heading">省エネ効果を見る<i class="fas fa-times"></i></div>
+						<div class="detail-box-modal__info">
+							<p class="detail-box-modal__title">こたつ布団に、上掛と敷布団をあわせて使う。</p>
+							<p class="detail-box-modal__desc">こたつ布団だけの場合と、こたつ布団に上掛けと敷布団を併用した場合の比較（1日5時間使用）</p>
+							<ul class="detail-lst-info">
+								<li><span class="detail-lst-info__title"><i class="fas fa-plug"></i> 消費電力の削減量</span><span class="detail-lst-info__desc">32.48kWh</span></li>
+								<li><span class="detail-lst-info__title"><i class="fas fa-leaf"></i> CO2の削減量</span><span class="detail-lst-info__desc">15.9kg</span></li>
+							</ul>
+							<p class="detail-box-modal__sum">→約880円の節約<span>（年間）</span></p>
+						</div>
+						<div class="detail-box-modal__info">
+							<p class="detail-box-modal__title">設定温度は低めに。</p>
+							<p class="detail-box-modal__desc">温度調節を「強」から「中」に下げた場合（1日5時間使用）</p>
+							<ul class="detail-lst-info">
+								<li><span class="detail-lst-info__title"><i class="fas fa-plug"></i> 消費電力の削減量</span><span class="detail-lst-info__desc">48.95kWh</span></li>
+								<li><span class="detail-lst-info__title"><i class="fas fa-leaf"></i> CO2の削減量</span><span class="detail-lst-info__desc">23.9kg</span></li>
+							</ul>
+							<p class="detail-box-modal__sum">→約1,320円の節約<span>（年間）</span></p>
+						</div>
+						<div class="detail-box-modal__close"><i class="fas fa-times"></i> とじる</div>
 					</div>
 				</div>
 			</div>
@@ -160,13 +257,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <footer id="l-footer" class="l-footer">
 	<div class="wrp-container">
 		<ul class="l-footer__nav">
-			<li class="current"><a href="airconditioning.html"><img src="./img/index-img-detail01.png" alt="" class="fluid-image"><span>冷暖房</span></a></li>
-			<li><a href="kitchen.html"><img src="./img/index-img-detail02.png" alt="" class="fluid-image"><span>キッチン</span></a></li>
-			<li><a href="living.html"><img src="./img/index-img-detail03.png" alt="" class="fluid-image"><span>リビング</span></a></li>
-			<li><a href="cleaning.html"><img src="./img/index-img-detail04.png" alt="" class="fluid-image"><span>洗濯・掃除</span></a></li>
-			<li><a href="bath-toilet.html"><img src="./img/index-img-detail05.png" alt="" class="fluid-image"><span>お風呂・トイレ</span></a></li>
+			<li class="current"><a href="airconditioning.html"><figure><img src="./img/index-img-detail01.png" alt="" class="fluid-image"></figure><span>冷暖房</span></a></li>
+			<li><a href="kitchen.html"><figure><img src="./img/index-img-detail02.png" alt="" class="fluid-image"></figure><span>キッチン</span></a></li>
+			<li><a href="living.html"><figure><img src="./img/index-img-detail03.png" alt="" class="fluid-image"></figure><span>リビング</span></a></li>
+			<li><a href="cleaning.html"><figure><img src="./img/index-img-detail04.png" alt="" class="fluid-image"></figure><span>洗濯・掃除</span></a></li>
+			<li><a href="bath-toilet.html"><figure><img src="./img/index-img-detail05.png" alt="" class="fluid-image"></figure><span>お風呂・トイレ</span></a></li>
 		</ul>
 		<p class="l-footer__return"><a href="index.html">トップへもどる</a></p>
+	</div>
+	<div class="wrp-footer">
 		<p class="l-footer__top">当コンテンツは、<a href="https://www.enecho.meti.go.jp/category/saving_and_new/saving/general/howto/" target="_blank">資源エネルギー庁ウェブサイト「無理のない省エネ節約」</a> の情報をもとに作成しています。</p>
 		<div class="l-footer__bottom">
 			<div class="l-footer__sns">
