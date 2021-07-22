@@ -197,21 +197,26 @@ var Common = (function () {
 	//Light box
 	Common.prototype.jsLightBox = function () {
 		$('.js-modal-popup').unbind('click');
-		$('.js-modal-popup').click(function(){
+		$('.js-modal-popup').click(function(e){
+			e.preventDefault();
 			var $target = $($(this).attr('href'));
 			$('#l-document').width($('#l-document').width());
+			$('#l-header').width($('#l-document').width());
 			$target.addClass('is-open');
 			$('html').addClass('is-hidden');
+			return;
 		});
 		$('.detail-box-modal__heading i').click(function(){
 			$('.detail-box-modal.is-open').removeClass('is-open');
 			$('html').removeClass('is-hidden');
 			$('#l-document').removeAttr('style');
+			$('#l-header').removeAttr('style');
 		});
 		$('.detail-box-modal__close').click(function(){
 			$('.detail-box-modal.is-open').removeClass('is-open');
 			$('html').removeClass('is-hidden');
 			$('#l-document').removeAttr('style');
+			$('#l-header').removeAttr('style');
 		});
 		$('.detail-box-modal').click(function(e){
 			if($(e.target).closest('.detail-box-modal__content').length){
@@ -220,6 +225,7 @@ var Common = (function () {
 			$('.detail-box-modal.is-open').removeClass('is-open');
 			$('html').removeClass('is-hidden');
 			$('#l-document').removeAttr('style');
+			$('#l-header').removeAttr('style');
 		});
 	}
 	return Common;
