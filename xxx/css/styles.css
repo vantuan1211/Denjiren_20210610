@@ -769,34 +769,47 @@ textarea{
 		border-radius: 8px;
 	}
 	.nav-global > li:nth-child(1) > a::before{
-		background: url(../img/icon-menu-detail01.png) no-repeat center;
+		background: url(../img/icon-aircon.svg) no-repeat center;
+		background-size: auto 15px;
 	}
 	.nav-global > li.active:nth-child(1) > a::before{
-		background: url(../img/icon-menu-detail01-on.png) no-repeat center;
+		background: url(../img/icon-aircon-on.svg) no-repeat center;
+		background-size: auto 15px;
 	}
 	.nav-global > li:nth-child(2) > a::before{
-		background: url(../img/icon-menu-detail02.png) no-repeat center;
+		background: url(../img/icon-kitchin.svg) no-repeat center;
+		background-size: auto 24px;
 	}
 	.nav-global > li.active:nth-child(2) > a::before{
-		background: url(../img/icon-menu-detail02-on.png) no-repeat center;
+		background: url(../img/icon-kitchin-on.svg) no-repeat center;
+		background-size: auto 24px;
 	}
 	.nav-global > li:nth-child(3) > a::before{
-		background: url(../img/icon-menu-detail03.png) no-repeat center;
+		background: url(../img/icon-living.svg) no-repeat center;
+		background-size: auto 24px;
 	}
 	.nav-global > li.active:nth-child(3) > a::before{
-		background: url(../img/icon-menu-detail03-on.png) no-repeat center;
+		background: url(../img/icon-living-on.svg) no-repeat center;
+		background-size: auto 24px;
 	}
 	.nav-global > li:nth-child(4) > a::before{
-		background: url(../img/icon-menu-detail04.png) no-repeat center;
+		background: url(../img/icon-washing.svg) no-repeat center;
+		background-size: auto 24px;
 	}
 	.nav-global > li.active:nth-child(4) > a::before{
-		background: url(../img/icon-menu-detail04-on.png) no-repeat center;
+		background: url(../img/icon-washing-on.svg) no-repeat center;
+		background-size: auto 24px;
 	}
 	.nav-global > li:nth-child(5) > a::before{
-		background: url(../img/icon-menu-detail05.png) no-repeat center;
+		background: url(../img/icon-bath.svg) no-repeat center;
+		background-size: auto 24px;
 	}
 	.nav-global > li.active:nth-child(5) > a::before{
-		background: url(../img/icon-menu-detail05-on.png) no-repeat center;
+		background: url(../img/icon-bath-on.svg) no-repeat center;
+		background-size: auto 24px;
+	}
+	.icon{
+		fill: #DDFFB5!important;
 	}
 }
 /* endMedia */
@@ -923,15 +936,6 @@ textarea{
 	color: #666;
 	text-decoration: underline;
 }
-.l-footer__top a::after{
-	content: "";
-	display: inline-block;
-	width: 12px;
-	height: 12px;
-	background: url("../img/icon-external.svg") center no-repeat;
-	background-size: cover;
-	margin-left: 0.5em;
-}
 .l-footer__top a:hover{
 	text-decoration: none;
 }
@@ -939,7 +943,7 @@ textarea{
 	display: table;
 	table-layout: fixed;
 	width: 100%;
-	margin-top: 75px;
+	margin-top: 77px;
 }
 .l-footer__sns{
 	display: table-cell;
@@ -958,20 +962,11 @@ textarea{
 .l-footer__content p a{
 	color: #666;
 }
-.l-footer__content p a::after{
-	content: "";
-	display: inline-block;
-	width: 12px;
-	height: 12px;
-	background: url("../img/icon-external.svg") center no-repeat;
-	background-size: cover;
-	margin-left: 0.5em;
-}
 .l-footer__content p a:hover{
 	text-decoration: underline;
 }
 .l-footer__content p + p{
-	margin-top: 8px;
+	margin-top: 10px;
 }
 .media-sns{
 	display: flex;
@@ -1051,7 +1046,7 @@ textarea{
 @media only screen and (max-width:767px){
 	.l-footer{
 		padding-top: 80px;
-		padding-bottom: 10px;
+		padding-bottom: 5px;
 		margin-top: 0;
 	}
 	.l-footer__top{
@@ -1073,7 +1068,7 @@ textarea{
 		justify-content: center;
 	}
 	.l-footer__content{
-		margin-top: 38px;
+		margin-top: 40px;
 		text-align: center;
 	}
 	.l-footer__content p + p{
@@ -1264,7 +1259,7 @@ textarea{
 		display: table;
 		width: 100%;
 		table-layout: fixed;
-		padding: 30px 16px 38px;
+		padding: 28px 16px 40px;
 		box-sizing: border-box;
 	}
 	.lst-detail__figure{
@@ -1286,14 +1281,15 @@ textarea{
 		text-align: left;
 	}
 	.lst-detail__title::before{
-		content: "";
+		font-family: 'Font Awesome 5 Free';
+		font-weight: 900;
+		content: "\f0da";
+		font-size: 16px;
+		line-height: 1;
 		display: inline-block;
 		width: 6px;
-		height: 16px;
-		background: url(../img/icon-triangle-right.png) no-repeat center;
-		background-size: 6px 16px;
 		position: absolute;
-		top: 50%;
+		top: 45%;
 		left: 0;
 		transform: translateY(-50%);
 	}
@@ -1551,7 +1547,7 @@ textarea{
 	display: inline-block;
 	width: 60px;
 	height: 44px;
-	background: url(../img/icon-detail-modal01.png) no-repeat center;
+	background: url(../img/icon-light.png) no-repeat center;
 	background-size: 100% auto;
 	position: absolute;
 	top: 50%;
