@@ -769,43 +769,43 @@ textarea{
 		border-radius: 8px;
 	}
 	.nav-global > li:nth-child(1) > a::before{
-		background: url(../img/icon-aircon.svg) no-repeat center;
+		background: url("../img/icon-aircon.svg") no-repeat center;
 		background-size: auto 15px;
 	}
 	.nav-global > li.active:nth-child(1) > a::before{
-		background: url(../img/icon-aircon-on.svg) no-repeat center;
+		background: url("../img/icon-aircon-on.svg") no-repeat center;
 		background-size: auto 15px;
 	}
 	.nav-global > li:nth-child(2) > a::before{
-		background: url(../img/icon-kitchin.svg) no-repeat center;
+		background: url("../img/icon-kitchin.svg") no-repeat center;
 		background-size: auto 24px;
 	}
 	.nav-global > li.active:nth-child(2) > a::before{
-		background: url(../img/icon-kitchin-on.svg) no-repeat center;
+		background: url("../img/icon-kitchin-on.svg") no-repeat center;
 		background-size: auto 24px;
 	}
 	.nav-global > li:nth-child(3) > a::before{
-		background: url(../img/icon-living.svg) no-repeat center;
+		background: url("../img/icon-living.svg") no-repeat center;
 		background-size: auto 24px;
 	}
 	.nav-global > li.active:nth-child(3) > a::before{
-		background: url(../img/icon-living-on.svg) no-repeat center;
+		background: url("../img/icon-living-on.svg") no-repeat center;
 		background-size: auto 24px;
 	}
 	.nav-global > li:nth-child(4) > a::before{
-		background: url(../img/icon-washing.svg) no-repeat center;
+		background: url("../img/icon-washing.svg") no-repeat center;
 		background-size: auto 24px;
 	}
 	.nav-global > li.active:nth-child(4) > a::before{
-		background: url(../img/icon-washing-on.svg) no-repeat center;
+		background: url("../img/icon-washing-on.svg") no-repeat center;
 		background-size: auto 24px;
 	}
 	.nav-global > li:nth-child(5) > a::before{
-		background: url(../img/icon-bath.svg) no-repeat center;
+		background: url("../img/icon-bath.svg") no-repeat center;
 		background-size: auto 24px;
 	}
 	.nav-global > li.active:nth-child(5) > a::before{
-		background: url(../img/icon-bath-on.svg) no-repeat center;
+		background: url("../img/icon-bath-on.svg") no-repeat center;
 		background-size: auto 24px;
 	}
 	.icon{
@@ -1351,7 +1351,7 @@ textarea{
 	display: block;
 	width: 40px;
 	height: 29px;
-	background: url(../img/icon-plug.svg) no-repeat center;
+	background: url("../img/icon-plug.svg") no-repeat center;
 	background-size: 100% auto;
 	position: absolute;
 	right: 0;
@@ -1426,7 +1426,7 @@ textarea{
 	.detail-box-article__nav__inner::after{
 		width: 17px;
 		height: 12px;
-		background: url(../img/icon-plug.svg) no-repeat center;
+		background: url("../img/icon-plug.svg") no-repeat center;
 		background-size: auto 100%;
 	}
 	.detail-hdg-title{
@@ -1557,6 +1557,20 @@ textarea{
 	.detail-box-main{
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+	.detail-box-main--kitchen .detail-box-main__link--02{
+		top: 47%;
+		left: 0.5%;
+	}
+	.detail-box-main--kitchen .detail-box-main__link--04{
+		left: 16%;
+	}
+	.detail-box-main--living .detail-box-main__link--01{
+		top: 0;
+		left: 48%;
+	}
+	.detail-box-main--living .detail-box-main__link--02{
+		top: -5%;
 	}
 }
 @media only screen and (max-width:767px){
@@ -1728,7 +1742,7 @@ textarea{
 	display: inline-block;
 	width: 60px;
 	height: 44px;
-	background: url(../img/icon-light.png) no-repeat center;
+	background: url("../img/icon-light.png") no-repeat center;
 	background-size: 100% auto;
 	position: absolute;
 	top: 50%;
@@ -1899,7 +1913,7 @@ html.is-hidden{
 	display: inline-block;
 	width: 60px;
 	height: 44px;
-	background: url(../img/icon-light.png) no-repeat center;
+	background: url("../img/icon-light.png") no-repeat center;
 	background-size: 100% auto;
 	position: absolute;
 	top: 50%;
