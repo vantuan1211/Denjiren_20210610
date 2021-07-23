@@ -1813,8 +1813,7 @@ html.is-hidden{
 	max-height: 100vh;
 }
 .detail-box-modal{
-	/*display: none;*/
-	display: block;
+	display: none;
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
@@ -1826,6 +1825,9 @@ html.is-hidden{
 	bottom: 0;
 	z-index: 101;
 	box-sizing: border-box;
+}
+.detail-box-modal.is-load{
+	display: block;
 	transition: all 0.4s ease;
 	opacity: 0;
 	visibility: hidden;
@@ -1910,6 +1912,10 @@ html.is-hidden{
 	display: table-cell;
 	vertical-align: middle;
 	text-align: right;
+}
+.detail-lst-info__hikaku img{
+	width: 150px;
+	height: auto;
 }
 .detail-box-modal__sum{
 	text-align: right;

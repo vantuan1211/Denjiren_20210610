@@ -196,6 +196,7 @@ var Common = (function () {
 
 	//Light box
 	Common.prototype.jsLightBox = function () {
+		$('.detail-box-modal').addClass('is-load');
 		$('.js-modal-popup').unbind('click');
 		$('.js-modal-popup').click(function(e){
 			e.preventDefault();
