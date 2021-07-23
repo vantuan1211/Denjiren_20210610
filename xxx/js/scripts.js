@@ -66,14 +66,14 @@ var  locationHref     = window.location.href,     // http://www.google.com:80/se
 /* ============================================================
 * IE11 Fixed element problems
 * ============================================================ */
-if(isIE11) {
-	document.body.addEventListener("mousewheel", function(event) {
-		event.preventDefault();
-		var weelDelta = event.wheelDelta;
-		var currentOffset = window.pageYOffset;
-		window.scrollTo(0, currentOffset - weelDelta);
-	});
-}
+// if(isIE11) {
+// 	document.body.addEventListener("mousewheel", function(event) {
+// 		event.preventDefault();
+// 		var weelDelta = event.wheelDelta;
+// 		var currentOffset = window.pageYOffset;
+// 		window.scrollTo(0, currentOffset - weelDelta);
+// 	});
+// }
 /* ============================================================
 * Common Script
 * ============================================================ */
@@ -125,7 +125,7 @@ var Common = (function () {
 		$('body').on('click', 'a[href^="#"]:not(".js-modal-popup")',function(){
 			var href= $(this).attr('href');
 			var target = $(href === '#' || href === '' ? 'html' : href);
-			var position = target.offset().top - 80;
+			var position = target.offset().top - $('#l-header').height();
 			$('body,html').animate({scrollTop:position}, 500, 'swing');
 			return false;
 		});
