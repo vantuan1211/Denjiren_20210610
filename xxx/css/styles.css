@@ -1738,6 +1738,9 @@ textarea{
 	padding-left: 30px;
 	color: #666;
 }
+.detail-box-media__toTop a:hover{
+	color: #85CE70;
+}
 .detail-box-media__toTop a::before{
 	font-family: 'Font Awesome 5 Free';
     font-weight: 900;
@@ -1812,6 +1815,9 @@ textarea{
 	}
 	.detail-box-article__content__inner + .detail-box-article__content__inner .detail-box-media{
 		padding-top: 116px;
+	}
+	.detail-box-media__toTop a: hover{
+		color: #666;
 	}
 }
 
