@@ -1179,7 +1179,7 @@ textarea{
 }
 @media only screen and (max-width:767px){
 	.box-main-visual{
-		margin-top: 0;
+		margin-top: 40px;
 		margin-bottom: 62px;
 	}
 	.box-main-visual__title{
@@ -1246,6 +1246,14 @@ textarea{
 		color: #85CE70;
 	}
 }
+@media only screen and (min-width:768px) and (max-width:959px){
+	.lst-detail{
+		margin: 0 -15px;
+	}
+	.lst-detail > li{
+		padding: 0 15px;
+	}
+}
 @media only screen and (max-width:767px){
 	.lst-detail{
 		margin: 0;
@@ -1260,7 +1268,7 @@ textarea{
 		display: table;
 		width: 100%;
 		table-layout: fixed;
-		padding: 28px 16px 40px;
+		padding: 40px 16px 40px;
 		box-sizing: border-box;
 	}
 	.lst-detail__figure{
@@ -1343,6 +1351,7 @@ textarea{
 	font-size: 24px;
 	font-weight: normal;
 	margin: 0;
+	color: #85CE70;
 }
 .detail-lst-nav{
 	margin-top: 45px;
@@ -1406,7 +1415,6 @@ textarea{
 	}
 	.detail-hdg-title{
 		font-size: 32px;
-		color: #85CE70;
 		letter-spacing: 0.1em;
 	}
 	.detail-lst-nav{
