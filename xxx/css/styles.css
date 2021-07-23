@@ -998,6 +998,7 @@ textarea{
 .l-footer__nav li a{
 	display: block;
 	color: #666;
+	font-weight: bold;
 }
 .l-footer__nav li.current a{
 	color: #85CE70;
@@ -1360,6 +1361,7 @@ textarea{
 	position: relative;
 	font-size: 16px;
 	line-height: 1.3125;
+	font-weight: bold;
 	color: #666;
 	padding-left: 22px;
 }
@@ -1802,11 +1804,8 @@ textarea{
 	.detail-box-media__modal{
 		margin-top: 68px;
 	}
-	.detail-box-media__modal a::before{
-		display: none;
-	}
 	.detail-box-media__modal a{
-		padding-left: 32px;
+		padding-left: 84px;
 	}
 	.detail-box-media__modal a::after{
 		right: 18px;
